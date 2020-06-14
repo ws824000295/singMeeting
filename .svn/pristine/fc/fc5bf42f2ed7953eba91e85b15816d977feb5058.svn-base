@@ -1,0 +1,250 @@
+<%@ page contentType="text/html; charset=UTF-8"%>
+<%@ include file="/WEB-INF/jsp/common/taglibs.jsp"%>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="_csrf" content="${_csrf.token}"/>
+	<meta name="_csrf_header" content="${_csrf.headerName}"/>
+	<title>创建会议</title>
+	<meta content="yes" name="apple-mobile-web-app-capable" />
+	<meta content="yes" name="apple-touch-fullscreen" />
+	<meta content="telephone=no,email=no" name="format-detection" />
+	<link rel="shortcut icon" href="${ctx}/images/glodon.jpg" type="image/x-icon"/>
+	<link rel="stylesheet" type="text/css" href="${ctx}/js/jquery.confirm/jquery.confirm.css" />
+	<script type="text/javascript" src="${ctx}/js/jquery-1.8.3.min.js"></script>
+	<script type="text/javascript" src="${ctx}/js/jquery.confirm/jquery.confirm.js"></script>
+	<script type="text/javascript" src="${ctx}/js/layer/layer.js" ></script>
+	<script type="text/javascript" src="${ctx}/js/util/util.js"></script> 
+	
+<style type="text/css">
+* {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.page-box {
+	width: 900px;
+	height: auto;
+	overflow: hidden;
+	margin: 50px auto;
+}
+
+.add-btn-box {
+	width: 100%;
+	height: 60px;
+}
+
+.add-btn-box button {
+	cursor: pointer;
+	-webkit-appearance: none;
+	text-align: center;
+	outline: 0;
+	padding: 12px 20px;
+	font-size: 14px;
+	border-radius: 4px;
+	color: #fff;
+	background-color: #409eff;
+}
+
+.checkbox-box {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: #f3f3f3;
+	padding: 20px 25px;
+	font-size: 14px;
+	display: flex;
+	align-items: center;
+}
+
+.checkbox-box span {
+	margin: 0 20px 0 6px;
+	color: #222;
+}
+
+.table-box {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: 17px;
+}
+
+.table-title {
+	width: 100%;
+	height: 48px;
+	line-height: 48px;
+	background: #f3f3f3;
+}
+
+.table-item {
+	display: inline-block;
+	width: 176px;
+	text-align: center;
+	font-size: 12px;
+	color: #666;
+}
+
+.table-row {
+	width: 100%;
+	height: 70px;
+	line-height: 70px;
+	border: 1px solid #ebeef5;
+	border-top: none;
+}
+
+.table-row:hover {
+	background: #f5f7fa;
+}
+
+.table-row .table-item {
+	width: 175px;
+	border-right: 1px solid #ebeef5;
+}
+
+.table-row .table-item:last-child {
+	border-right: none;
+}
+
+.btn-sm {
+	cursor: pointer;
+	-webkit-appearance: none;
+	text-align: center;
+	outline: 0;
+	font-size: 12px;
+	border-radius: 4px;
+	color: #409eff;
+	background: #fff;
+	text-decoration: underline;
+	padding: 6px;
+}
+
+#loading {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	z-index: 15000;
+}
+ 
+#loading img {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 80px;
+	height: 80px;
+	margin-top: -15px;
+	margin-left: -15px;
+}
+
+</style>
+</head>
+<script type="text/javascript">
+		
+			 
+	//创建会议
+	 function createMeeting(){
+		 var ids = [];
+		 $('input[name="checkbox"]:checked').each(function(){//遍历每一个名字为interest的复选框，其中选中的执行函数    
+			 ids.push($(this).val());//将选中的值添加到数组chk_value中    
+         });
+		 if(ids.length < 2){
+			 alert("至少2台终端进会!");
+			 return;
+		 }
+		 var meetName = $("#meetName").val();
+		 if(meetName == "" || meetName.trim() == 0){
+			 alert("请填写会议名称!");
+			 return;
+		 }
+		  
+		 toAjaxJson("single/meeting/createMeeting",{"ids":ids.toString(),"meetName":meetName},function(data){
+			 if(data.success){
+				 alert("创建成功!");
+				 window.location.reload();
+			 }else{
+				 alert("创建异常");
+			 }
+		}); 
+	}
+	
+	//关闭会议
+	function closeMeeting(id){
+	 	$("#confirmOverlay").css("display","block");
+		confirm("确定要结束会议吗？",function(){
+			 $("#confirmOverlay").css("display","none");
+			 $('#loading').show();
+			  toAjaxJson("single/meeting/closeMeeting",{"id":id},function(data){
+				 if(data.success){
+					 window.location.reload();
+				 }
+			}); 
+		});
+	}
+	
+	//下载
+	function downLoad(id){
+		window.location.href = ctx+ "/single/meeting/downLoadMeet?meetId="+id;
+	}
+	
+	function quxiao() {
+		$("#confirmOverlay").css("display","none");
+	}
+	
+</script>
+<body>
+		<div class="page-box">
+			
+			<div id="loading" style="display: none;">
+			    <img src="${ctx}/images/loading.gif">
+			</div>
+			
+			<div class="checkbox-box">
+				<c:forEach items="${list}" var="device" varStatus="">
+					<label>
+						<input class="checkbox-item" type="checkbox"   name="checkbox" value="${device.id}" <c:if test="${device.state == 1}">  disabled="true" </c:if>  />
+						<span>${device.region_name}</span>
+					</label>
+				</c:forEach>
+				 
+			</div>
+			
+			<div class="add-btn-box">
+				<button type="button" onclick="createMeeting();">新建会议</button>
+				<label>会议名称： <input type="text" id="meetName" style="width: 280px;height: 40px; background-color: #f3f3f3;"></label>
+			</div>
+			
+			<div class="table-box">
+				<div class="table-title">
+					<div class="table-item">序号</div>
+					<div class="table-item">会议名称</div>
+					<div class="table-item">创建时间</div>
+					<div class="table-item">持续时间</div>
+					<!-- <div class="table-item">状态</div> -->
+					<div class="table-item">操作</div>
+				</div>
+				
+				<c:forEach items="${listMeet}" var="meet" varStatus="m">
+					<div class="table-row">
+						<div class="table-item">${m.index+1}</div>
+						<div class="table-item">${meet.meetName}</div>
+						<div class="table-item">${meet.createTime}</div>
+						<div class="table-item">${meet.liveTime}</div>
+						<%-- <div class="table-item">${meet.des}</div> --%>
+						<div class="table-item">
+						 	<c:if test="${meet.status eq '1'}">
+								<button class="btn-sm" type="button" onclick="downLoad('${meet.id}')">下载</button>
+						 	</c:if>
+						 	<c:if test="${meet.status eq '0'}">
+							 	<button class="btn-sm" type="button" onclick="closeMeeting('${meet.id}')">结束会议</button>
+						 	</c:if>
+						</div>
+					</div>
+				</c:forEach>
+			</div>
+		</div>
+	</body>
+</html>

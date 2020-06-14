@@ -1,0 +1,65 @@
+.tp_success01 {
+    position: fixed;
+    top: 30%;
+    left: 30%;
+    width: 4.5rem;
+    height: 0.8rem;
+    border-radius: 0.1rem;
+    display: none;
+    z-index: 1000000;
+}
+
+.fl_xiangqing {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 100001;
+}
+ 
+.superior-alert {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+.superior-alert-content {
+    width: 7.5rem;
+    height: 10.45rem;
+    position: absolute;
+    top: 2.36rem;
+    left: 50%;
+    margin-left: -3.75rem;
+    background: #fff;
+    border-radius: 0.15rem;
+}
+.superior-close {
+    width: 1.12rem;
+    height: 1.12rem;
+    background: url(../../images/fuli/less-close.png) no-repeat center;
+    background-size: 100%;
+    border-radius: 50%;
+    position: absolute;
+    top: -0.33rem;
+    right: -0.27rem;
+}
+
+.cw_fx {
+    width: 7.2rem;
+    height: 8.92rem;
+    background: url(../../images/fuli/cw_fxbg.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 2.66rem auto;
+    position: relative;
+}
+.cw_fx .cw_fxido {
+    width: 4.1rem;
+    position: absolute;
+    bottom: 6%;
+    left: 20%;
+}

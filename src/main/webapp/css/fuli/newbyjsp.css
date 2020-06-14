@@ -1,0 +1,589 @@
+.user-avatar{
+	width:0.64rem;
+	height:0.64rem;
+	border-radius:50%;
+	overflow:hidden;
+	float:left;
+	margin-top:0.1rem;
+	margin-right:0.1rem;
+}
+.user-avatar img{
+	width:100%;
+}
+.focus{
+	width: auto;
+    height: 24px;
+    background: #fe3657;
+    position: fixed;
+    right: 0;
+    top: 1.4rem;
+    border-radius: 0.15rem 0 0 0.15rem;
+    display: flex;
+    padding-left: 0.08rem;
+    color: #fff;
+    align-items: center;
+    z-index: 99;
+    font-size: 10px;
+    padding-right: 0.08rem;
+}
+.focus-avatar{
+	width: 16px;
+	height: 16px;
+	border-radius: 50%;
+	overflow: hidden;
+	margin-right: 0.16rem;
+}
+.focus-avatar img{
+	width: 100%;
+}
+.icon-rg{
+	display: block;
+	width: 0.28rem;
+	height: 0.28rem;
+	background: url('../../images/fuli/right.png') no-repeat center;
+	background-size: 100%;
+	margin-left: 0.05rem;
+}
+.newsUl{
+    width: 280px;
+    height: 24px;
+    border-radius: 0.15rem;
+    color: #fff;
+    font-size: 11px;
+    overflow: hidden;
+    position: fixed;
+    top: 150px;
+    left: 6px;;
+	z-index:99;
+}
+.newsLi{
+	width: auto;
+	height: 24px;
+	background: rgba(0,0,0,.5);
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: none;
+	border-radius:0.15rem;
+	padding-left: 0.16rem;
+	padding-right: 0.16rem;
+	z-index:999999;
+}
+.newsLi.on{
+	display: block;
+}
+.newsLi .focus-avatar{
+	float: left;
+	margin-top: 0.1rem;
+}
+.newsLi p{
+	float: left;
+	line-height: 24px;
+}
+
+.fl_xiangqing_qrcode {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 10000;
+}
+
+.qunfulli{
+	width: 230px;
+    height: 263px;
+	background: url(../../images/fuli/qunfuli.png) no-repeat;
+	background-size:100% 100%;
+	position: absolute;
+    top: 10%;
+    left: 50%;
+    margin-left: -115px;
+}
+
+.code_qrcode{
+	display: block;
+    width: 107px;
+    height: 107px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+ .close_qrcode{
+	position: absolute;
+	bottom: -40px;
+	width: 30px;
+	left: 45%;
+}
+.alert_appendwx {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.7);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: none;
+	z-index: 9999;
+}
+.weixin_box {
+	width: 80%;
+	height: auto;
+	overflow:hidden;
+	border-radius: 0.14rem;
+	margin: 1.46rem auto;
+	background: #fff;
+	padding: 0.53rem 1.2rem;
+	text-align: center;
+}.weixin_box .tet1 {
+	font-size: 0.32rem;
+	color: #212121;
+	margin-bottom: 0.3rem;
+}
+.weixin_box img {
+	width: 100%;
+	height: 60%;
+	display: block;
+}
+
+.weixin_box .tet2 {
+	font-size: 0.29rem;
+	color: #f16983;
+	margin-top: 0.4rem;
+}
+
+.weixin_box .tet3 {
+	font-size: 0.2rem;
+	color: #3c3c3c;
+	margin-top: 0.16rem;
+}
+
+.weixin_box .tet4 {
+	font-size: 0.38rem;
+	color: #59607f;
+	margin-top: 0.26rem;
+}
+.footer_m {
+    display: flex;
+    align-items: center;
+    border-top:none;
+    box-shadow: 0rem -0.01rem 0.02rem rgb(194,193,193);
+}
+.fubi-tips{
+	width:100%;
+	height:30px;
+	background:url('../../images/fuli/tips-bg.png') no-repeat center;
+	background-size:100% 100%;
+	font-size:10px;
+	color:#706e6a;
+	text-align:left;
+    position: fixed;
+    bottom: 40px;
+    line-height: 30px;
+    padding: 0 5px;
+    z-index:99;
+}
+.fubi-tips span,.fubi-tips .golook{
+	color:#ff7800;
+}
+.fubi-tips .golook{
+    text-align: right;
+    display: inline-block;
+    float: right;
+}
+#abc,.footer_m .btnp.two-btn{
+    flex: 1;
+    height: 40px !important;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin:0;
+}
+
+#abc a,#abc span,.btnp a,.btnp span{
+	flex: 1;
+    font-size: 15px;
+    color: #fff;
+    height: 40px;
+    line-height: 40px;
+    background: #fe3657;
+}
+#abc span:nth-child(2){
+	background: linear-gradient(#febb24, #fd8f04);
+}
+.num_pe.modelStyle1{
+	margin-top:0;
+    display: flex;
+    justify-content: flex-start;
+    padding-right: 12px;
+}
+.mb_shangjiamsgtop.modelStyle1{
+	width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: flex;
+}
+.mb_shangjiamsgtop .div {
+    
+}
+.flex-btn{
+    display: flex;
+    width:155%;
+    align-items: center;
+}
+.flex-btn a{
+	font-size:10px;
+}
+.mb_shangjiamsgtop .btn {
+    margin-top: 0px;
+    font-size:10px;
+    margin-left:0.2rem;
+}
+
+.gather-alert{
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,0.6);
+	z-index: 9999;
+	padding:0;
+}
+.gather-alert-content{
+	width: 100%;
+    height: 412px;
+	background: url(../../images/fuli/gather-bg.png) no-repeat center;
+	background-size: 100% 100%;    
+	position: relative;
+    top: 1.5rem;
+    left: 50%;
+    margin-left: -50%;
+}
+.gather-close{
+	width: 0.63rem;
+	height: 0.63rem;
+	background: url('../../images/fuli/close.png') no-repeat center;
+	background-size: 100%;
+	position: absolute;
+	right: 30px;
+	top: -0.63rem;
+}
+.gather-tips{
+    width: 50%;
+    font-size: 13px;
+    color: #fff;
+    text-align: center;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    margin-left: -25%;
+    line-height: 0.8rem;
+}
+.gather-tips span{
+	color: #fff134;
+}
+.icon-gather{
+	display: block;
+	width: 40%;
+	height: 37px;
+	background: url('../../images/fuli/gather-btn.png') no-repeat center;
+	background-size: 100% 100%;
+	position: absolute;
+    bottom: 50px;
+    left: 50%;
+    margin-left: -20%;
+}
+.price-time{
+	width: 100%;
+	height: 42px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	color: #fff;
+}
+.price{
+    flex: 2;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    line-height: 50px;
+    background: #fe3657;
+    background-size: 100% 100%;
+    height: 100%;
+    padding-left: 10px;
+    margin-top: -2px;
+}
+.price-sim{
+	font-size: 12px;
+}
+.now-price{
+	font-size: 24px;
+}
+.high-price{
+	font-size: 12px;
+    margin-left: -5px;
+    display: flex;
+    align-items: center;
+}
+.high-price .high-price-del{
+	color: #fff;
+    font-size: 12px;
+	text-decoration: line-through;
+}
+.time{
+	flex: 1;
+    height: 100%;
+	text-align: center;
+	background:#ffebec;
+	display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.time-text{
+	font-size: 10px;
+	color: #fe3657;
+    margin-top:2px;
+}
+.time-list{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top:4px;
+}
+.time-item{
+	display: inline-block;
+    padding: 0 2px;
+    background: #fe3657;
+    text-align: center;
+    border-radius: 3px;
+	font-size: 9px;
+}
+.time-list i{
+	font-style:normal;
+	font-size: 9px;
+	margin:0 1px;
+}
+.icon-maohao{
+	display: inline-block;
+	width: 3px;
+    margin: 0 3px;
+	height: 8px;
+	background: url('../../images/fuli/maohao.gif') no-repeat center;
+	background-size: 100%;
+}
+.bubaoyou{
+    width: 100%;
+    height: 36px;
+    color: #6f6e6e;
+    background: #fff;
+    line-height: 36px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.mb_lsit li {
+    border-bottom:none;
+	color: #666;
+	font-size:10px;
+    margin-left: 10px;
+}
+.mb_lsit.border-list li {
+    border-bottom: 0.5px solid #dedddd;
+}
+.share-rules{
+	width: 100%;
+	height: 42px;
+	background: #fff;
+}
+
+
+.icon-sr{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url('../../images/fuli/icon-sr2.png') no-repeat center;
+	background-size: 100%;
+    margin: 0 10px;
+    margin-right: 5px;
+}
+.icon-sr-div{
+	flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+.super-fx{
+	flex:1;
+}
+.rules{
+	font-size: 10px;
+	color: #fe1c00;
+	flex:1;
+	display: flex;
+    align-items: center;
+}
+.rules span{
+	font-size: 12px;
+	font-weight: 700;
+}
+.goshare{
+	background: #fe1c00;
+    border-radius: 3px;
+    text-align: center;
+    color: #fff;
+    width: 50px;
+    height: 24px;
+    line-height: 24px;
+}
+.icon-wenhao{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	background: url('../../images/fuli/wenhao.gif') no-repeat center;
+	background-size: 100%;
+	margin-left: 3px;
+}
+.mb_keti{
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+}
+.btn.allbtn{
+	width: 50px;
+    height: 20px;
+    line-height: 22px;
+	background: linear-gradient(to right, #f55f2c , #fd384a);
+	background-size: 100%;
+    color: #fff;
+    border: none;
+}
+.mb_xian {
+    width: 100%;
+    height: 4px;
+    background: #f5f5f5;
+}
+.bubaoyou-title{
+	font-size:10px;
+	color:#333;
+	font-weight:500;
+	display: flex;
+    align-items: center;
+}
+.bubaoyou-title i{
+	display:inline-block;
+    width: 4px;
+    height: 12px;
+    background: #ff3118;
+    border-radius: 1px;
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.high-price-text{
+	color:#fff;
+    display: block;
+    width: 40px;
+    height: 32px;
+    font-size: 10px;
+    background-size: 100%;
+    text-align: right;
+    line-height: 34px;
+}
+.high-price-text span{
+    background: #fff;
+    margin-right: 3px;
+}
+.high-price-text span i{
+    border-radius: 50%;
+    background: #f85235;
+    font-style: normal;
+    width: 11px;
+    height: 10px;
+    padding: 0 1px;
+}
+.gloden{
+	display:inline-block;
+	width:19px;
+	height:14px;
+	background: url('../../images/fuli/gloden.gif') no-repeat center;
+	background-size: 100%;
+}
+.icon-become{
+	display:inline-block;
+	width:9px;
+	height:11px;
+	background:url('../../images/fuli/icon-become.png') no-repeat center;
+	background-size:100%;
+	margin-left: 2px;
+}
+.become{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-left: 3px solid #fb4b3e;
+    padding: 8px 12px;
+    padding-right:10px;
+    color: #333;
+    font-size: 10px;
+}
+.become-golden{
+    font-size: 12px;
+}
+.become-golden span{
+    color:#fd4044;
+}
+.boecome-right{
+    font-size: 12px;
+    color: #fb1d08;
+    display: flex;
+    align-items: center;
+}
+.rules-small{
+    color: #fe1c00;
+    font-size: 11px;
+}
+.mb2_peoples .go {
+    display: none;
+}
+.mb2_peoples {
+    width: 300px;
+    margin-left: 0px;
+    padding: 10px;
+    height: 45px;
+    padding-top: 0;
+}
+.mb_shangjiamsgtop .div .btn_p {
+    padding-top: 4px;
+}
+.mball_boxContant img{
+	width:100%;
+}
+.heart{
+text-align: start;
+display:flex;
+align-items:center;
+}
+.mb_heart{
+	width: 15px;
+	height: 15px;
+	background:url('../../images/fuli/heart_wei.png') no-repeat;
+	background-size: 100% 100%;
+	display: block;
+	margin: 0 auto;
+}
+.mb_span{
+	font-size: 10px;
+	color: #666;
+}
+.phone_msg p img{
+	width:100%;
+}

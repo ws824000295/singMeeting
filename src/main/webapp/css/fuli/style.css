@@ -1,0 +1,664 @@
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-tap-highlight-color: transparent;
+}
+.nfl_xiangqing {
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.6);
+			position: fixed !important;
+			top: 0;
+			bottom: 0;
+			z-index: 10;
+		}
+		
+		.nfl_xiangqing .fl_xiangqingpic {
+			width: 100%;
+			height: 380px;
+			background: url(../../images/fuli/fl_xiangqing.png) no-repeat center;
+			background-size:100% 100%;
+		}
+		
+		.nfl_xiangqing .fl_xiangqingmsg {
+			width: 170px;
+			height: 67px;
+			/*border: 2px solid red;*/
+			position: absolute;
+			left: 80px;
+			top: 205px;
+		}
+		
+		.nfl_xiangqing .fl_xiangqingmsg img {
+			display: block;
+			float: left;
+			width: 70px;
+			height: 70px;
+			border: 1px solid #fec069;
+		}
+		
+		.nfl_xiangqing .fl_xiangqingmsg div {
+			float: right;
+			width: 90px;
+			height: 70px;
+			overflow: hidden;
+		}
+		
+		.nfl_xiangqing .fl_xiangqingmsg div p:nth-child(1) {
+			font-size:12px;
+			font-weight: bold;
+			color: #fc4c3a;
+		}
+		
+		.nfl_xiangqing .fl_xiangqingmsg div p:nth-child(2) {
+			font-size: 12px;
+			color: #fc4c3a;
+		}
+		
+		.nfl_xiangqing .ido {
+			position: absolute;
+			left: 115px;
+			top: 330px;
+			width: 95px;
+			height: 30px;
+		}
+
+.view {
+	height: 100%;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-moz-box-orient: vertical;
+	-moz-box-direction: normal;
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	background: #fff;
+	margin-bottom: 1.53rem;
+	;
+}
+.yq_fx {
+	display: block;
+	width: 8.93rem;
+	height: 2.18rem;
+	margin: 0.2rem auto;
+}
+
+.ruel {
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: center;
+	-moz-box-align: justify;
+	-ms-flex-align: center;
+	justify-content: space-between;
+}
+
+.ruel li {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: center;
+}
+
+.ruel li img {
+	display: block;
+	width: 2.8rem;
+	height: 3.73rem;
+	margin: auto;
+}
+
+.fl_xiangqing {
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0.8);
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	z-index: 10;
+}
+
+.fl_xiangqing .fl_xiangqingpic {
+	width: 10rem;
+	height: 11.88rem;
+	background: url(../../images/fuli/fl_xiangqing.png) no-repeat center;
+	background-size: 10rem 11.88rem;
+}
+
+.fl_xiangqing .fl_xiangqingmsg {
+	width: 5rem;
+	height: 1.96rem;
+	position: absolute;
+	left: 2.63rem;
+	top: 6.55rem;
+}
+
+.fl_xiangqing .fl_xiangqingmsg img {
+	display: block;
+	float: left;
+	width: 1.98rem;
+	height: 1.98rem;
+	border: 0.03rem solid #fec069;
+}
+
+.fl_xiangqing .fl_xiangqingmsg div {
+	float: right;
+	width: 2.86rem;
+	height: 1.96rem;
+	overflow: hidden;
+}
+
+.fl_xiangqing .fl_xiangqingmsg div p:nth-child(1) {
+	font-size: 0.26rem;
+	font-weight: bold;
+	color: #fc4c3a;
+}
+
+.fl_xiangqing .fl_xiangqingmsg div p:nth-child(2) {
+	font-size: 0.26rem;
+	color: #fc4c3a;
+}
+
+.fl_xiangqing .ido {
+	position: absolute;
+	left: 3.63rem;
+	top: 10.33rem;
+	width: 2.93rem;
+	height: 0.93rem;
+}
+
+.flq_bg {
+	background: url(../../images/fuli/flq_bg.jpg) no-repeat center;
+	width: 100%;
+	height: 19.97rem;
+	background-size: 100% 100%;
+}
+
+.flq_bg .flq_time {
+	font-size: 0.66rem;
+	color: #fff;
+	font-weight: 500;
+	padding-top: 5.3rem;
+	padding-left: 1.35rem;
+}
+.flq_bg .flq_time span{
+	display:inline-block;
+	width:0.8rem;
+	text-align: right;
+}
+.flq_bg .flq_time span:nth-child(1) {
+	padding-left: 0.5rem;
+}
+.flq_bg .flq_time span:nth-child(2) {
+	padding-left: 0.95rem;
+}
+
+.flq_bg .flq_time span:nth-child(3) {
+	padding-left: 1.55rem;
+}
+
+.flq_bg .flq_time span:nth-child(4) {
+	padding-left: 1.7rem;
+}
+
+.flq_num {
+	width: 9.28rem;
+	height: 5.05rem;
+	background: url(../../images/fuli/flq_num.png) no-repeat;
+	background-size: 9.28rem 5.05rem;
+	margin: 0.8rem auto;
+	margin-bottom: 0.4rem;
+}
+
+.flq_num h6 {
+	font-size: 0.42rem;
+	color: #fc4c3a;
+	text-align: center;
+	padding-top: 0.3rem;
+	width: 7.5rem;
+	margin: auto;
+	overflow: hidden;
+}
+
+.flq_num div p {
+	font-size: 0.55rem;
+	font-weight: 500;
+	color: #fc7032;
+	float: left;
+	margin-top: 1.75rem;
+	letter-spacing: -2px;
+}
+
+.flq_num div p:nth-child(1) {
+	margin-left: 1.7rem;
+	width: 1.6rem;
+	text-align: center;
+	overflow: hidden;
+}
+
+.flq_num div p:nth-child(2) {
+	margin-left: 2.36rem;
+	width: 1.6rem;
+	text-align: center;
+	overflow: hidden;
+}
+
+.flq_num div p span {
+	font-size: 0.4rem;
+}
+
+.flq_btn {
+	width: 8.66rem;
+	margin: auto;
+	height: 1.38rem;
+}
+
+.flq_btn img {
+	display: block;
+	float: left;
+	width: 4.3rem;
+	height: 1.38rem;
+}
+
+.flq_fuiz {
+	display: block;
+	width: 5.57rem;
+	height: 0.54rem;
+	margin: auto;
+	margin-top: 0.4rem;
+}
+
+.flq_rule {
+	margin-top: 0.2rem;
+}
+
+.flq_rule li {
+	height: 0.6rem;
+	line-height: 0.7rem;
+	height: 0.7rem;
+	margin-left: 0.66rem;
+	color: #fff;
+	font-size: 0.28rem;
+}
+
+.flq_rule li img {
+	width: 0.7rem;
+	padding-right: 0.26rem;
+}
+
+.bgcolor {
+	background: #f2f2f2;
+}
+
+.dt_top {
+	height: 0.86rem;
+	background: url(../images/dt_bg.png) no-repeat;
+	background-size: 100% 100%;
+	padding-top: 0.15rem;
+}
+
+.dt_top .scode {
+	width: 0.48rem;
+	height: 0.48rem;
+	display: block;
+	float: left;
+	margin-left: 0.26rem;
+	margin-top: 0.05rem;
+}
+
+.dt_top p {
+	float: left;
+	width: 77%;
+	height: 0.2rem;
+	height: 0.6rem;
+	background: rgba(255, 255, 255, 0.4);
+	border-radius: 0.66rem;
+	margin-left: 0.36rem;
+	padding-left: 0.2rem;
+}
+
+.dt_top p img {
+	width: 0.4rem;
+	position: relative;
+	top: -0.02rem;
+}
+
+.dt_top p input[type=text] {
+	border: none;
+	width: 80%;
+	background: none;
+	line-height: 0.5rem;
+	color: #fff;
+	position: relative;
+	left: -0.15rem;
+}
+
+.dt_top div {
+	width: 0.48rem;
+	height: 0.48rem;
+	background: url(../images/msg.png) no-repeat;
+	background-size: 0.48rem 0.48rem;
+	float: right;
+	margin-right: 0.35rem;
+	margin-top: 0.1rem;
+	position: relative;
+}
+
+.dt_top div span {
+	display: block;
+	width: 0.38rem;
+	height: 0.38rem;
+	background: #fff;
+	color: #f75223;
+	border-radius: 50%;
+	font-size: 0.2rem;
+	line-height: 0.38rem;
+	text-align: center;
+	position: absolute;
+	right: -0.15rem;
+	top: -0.1rem;
+}
+
+.dt_top p input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	/* WebKit*/
+	color: #fff;
+}
+
+.dt_top p input:-moz-placeholder,
+textarea:-moz-placeholder { 
+	color: #fff;
+}
+
+.dt_top p input::-moz-placeholder,
+textarea::-moz-placeholder { 
+	color: #fff;
+}
+
+.dt_top p input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #fff;
+}
+
+.dt_nav {
+	height: 1.73rem;
+	background: #fff;
+	display: -webkit-box;
+	display: -moz-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-moz-box-pack: justify;
+	-ms-flex-pack: justify;
+	-webkit-box-align: center;
+	-moz-box-align: justify;
+	-ms-flex-align: center;
+	justify-content: space-between;
+}
+
+.dt_nav li {
+	-webkit-box-flex: 1;
+	-moz-box-flex: 1;
+	-webkit-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	text-align: center;
+	height: 1.27rem;
+	padding-top: 0.36rem;
+}
+
+.dt_nav li a {
+	display: block;
+	width: 100%;
+	height: 100%;
+}
+
+.dt_nav li a p {
+	color: #666666;
+	font-size: 0.37rem;
+	padding-top: 0.6rem;
+}
+.fl_banner {
+	width: 100%;
+	height: 3.46rem;
+	display: block;
+}
+
+.dt_searchbox {
+	margin-top: 0.2rem;
+	height: 1.06rem;
+	background: #fff;
+	position: relative;
+}
+
+.dt_searchbox .nav {
+	width: 25%;
+	float: left;
+	height: 1.06rem;
+	text-align: center;
+	line-height: 1.06rem;
+	font-size: 0.32rem;
+	color: #666666;
+}
+
+.dt_searchbox .nav img {
+	width: 0.34rem;
+}
+
+.all_navbox ul {
+	width: 100%;
+	background: #fff;
+}
+
+.dt_searchbox .all_navbox {
+	position: absolute;
+	top: 0.9rem;
+	width: 100%;
+	z-index: 99;
+}
+
+.all_navbox ul {
+	display: none;
+}
+
+.all_navbox ul li {
+	width: 90%;
+	margin: auto;
+	height: 1rem;
+	line-height: 1rem;
+	text-align: left;
+	font-size: 0.32rem;
+	border-top: 0.01rem solid #eee;
+}
+
+.zc_box {
+	width: 100%;
+	background: rgba(0, 0, 0, 0.6);
+	position: absolute;
+	bottom: 0;
+	z-index: 10;
+	height: 100%;
+	display: none;
+}
+
+.bg {
+	height: 0.2rem;
+	background: #f2f2f2;
+}
+  
+
+/** 支付成功后弹框 start*/
+.fuli_tankuang{
+			padding-top: 42px;
+			width: 250px;
+			margin: auto;
+			text-align: center;
+			color: #fff;
+			z-index: 99999;
+			 
+		}
+		.fuli_tankuang .p1{
+			font-size: 20px;
+			font-weight: 500;
+		}
+		.fuli_tankuang .p2{
+			font-size: 16px;
+			font-weight: 500;
+		}
+		.fuli_tankuang .code_01{
+			width: 220px;
+			height: 220px;
+			padding: 20px;
+			background: #fa5050;
+			margin: 40px auto;
+		}
+		.fuli_tankuang .code_01 img{
+			width: 100%;
+			height: 100%;
+			display: block;
+		}
+		.fuli_tankuang .p3{
+			width: 200px;
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			background: #fa5050;
+			border-radius:5px ;
+			margin: auto;
+		}
+		
+		.fuli_tankuang .p4{
+			text-align: center;
+			font-size: 12px;
+			position: absolute;
+			bottom: 20px;
+		}
+
+
+/** 支付成功后弹框 end*/
+
+
+/** 福利详情页面吸底start*/
+
+.footer_m{
+			position: fixed;
+			z-index: 99;
+			height: 40px;
+			background: #fff;
+			border-top:1px solid #eee ;
+			width: 100%;
+			bottom: 0;
+		}
+		.footer_m p:nth-child(1){
+			width: 65px;
+			height: 100%;
+			background: url(../../images/fuli/honme_01.png) no-repeat center top;
+			background-size:17px 17px ;
+			font-size: 9px;
+			color: #f88477;
+			text-align: center;
+			padding-top: 20px;
+			float: left;
+			line-height: 25px;
+			background-position-y: 5px;
+		}.footer_m p:nth-child(2){
+			width: 65px;
+			height: 100%;
+			line-height: 25px;
+			background: url(../../images/fuli/phpne_01.png) no-repeat center top;
+			background-size:17px 17px ;
+			font-size: 9px;
+			color: #f88477;
+			text-align: center;
+			padding-top: 20px;
+			float: left;
+			background-position-y: 5px;
+		}
+		
+		.footer_m p:nth-child(3){
+			width: 170px;
+			height: 100%;
+			background: #f55a47;
+			font-size: 11px;
+			color: #fff;
+			text-align: center;
+			float: right;
+			margin: 2px;
+			height: 33px;
+			line-height: 33px;
+			border-radius:2px ;
+		}
+/** 福利详情页面吸底end*/
+
+/** 福利详情页面购买完舒适达弹框开始*/
+
+.alert_mask{
+				width: 100%;
+				height: 100%;
+				background: rgba(0,0,0,.5);
+				position: fixed;
+				top: 0;
+				left: 0;
+				z-index:10000;
+			}
+			.alert_content{
+				width: 5.28rem;
+				height: 5.6rem;
+				margin: 0 auto;
+				margin-top: 2.32rem;
+				background: url(../../images/fuli/ucc_bg.png) no-repeat center;
+				background-size: 100% 100%;
+				position: relative;
+				border-radius: 10px;
+			}
+			.alert_know{
+				-webkit-appearance: none;
+				border:none;
+				display: block;
+				border-radius: .32rem;
+				width: 2.8rem;
+				height: .8rem;
+				background: #f55a46;
+				color: #fff;
+				font-size: .32rem;
+				text-align: center;
+				line-height: .8rem;
+				position: absolute;
+				left: 50%;
+				margin-left: -1.4rem;
+				bottom: .53rem;
+			}
+
+
+/** 福利详情页面购买完舒适达弹框end*/
+
+
+
+
+
+.mball_boxDetails .mball_boxTitle{
+  padding: 10px;
+  font-size: 0.42rem;
+  font-weight: 300;
+  border-bottom: 2px solid #EDEDED;
+  color: #111;
+}
+.mball_boxDetails .mball_boxContant{
+  padding: 10px;
+  font-size: 0.32rem;
+  font-weight: 300;
+  color: #111;
+}
+
+
+

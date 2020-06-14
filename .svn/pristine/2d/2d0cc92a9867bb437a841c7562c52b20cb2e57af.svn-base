@@ -1,0 +1,6 @@
+AbstractUserDetailsAuthenticationProvider.captchaIsNull=\u9a8c\u8bc1\u7801\u9a8c\u8bc1\u5931\u8d25\uff08\u670d\u52a1\u5668\u7aef\u6545\u969c\uff09
+AbstractUserDetailsAuthenticationProvider.captchaNotMatch=\u9a8c\u8bc1\u7801\u5339\u914d\u9519\u8bef\uff0c\u8bf7\u91cd\u65b0\u8f93\u5165
+AbstractUserDetailsAuthenticationProvider.captchaExpired=\u9a8c\u8bc1\u7801\u5df2\u5931\u6548\uff08\u6709\u6548\u65f6\u957f\u4e3a5\u5206\u949f\uff09\uff0c\u8bf7\u91cd\u65b0\u8f93\u5165
+AbstractUserDetailsAuthenticationProvider.emptyPassword=\u5bc6\u7801\u4e0d\u5141\u8bb8\u4e3a\u7a7a
+AbstractUserDetailsAuthenticationProvider.passwordNotMatch=\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef
+AbstractUserDetailsAuthenticationProvider.usernameNotFound=\u7528\u6237\u540d\u6216\u5bc6\u7801\u9519\u8bef

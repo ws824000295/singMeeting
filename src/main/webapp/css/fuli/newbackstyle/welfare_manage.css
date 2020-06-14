@@ -1,0 +1,812 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+}
+
+i {
+    font-style: normal;
+}
+
+input {
+    outline: none;
+}
+#new_title {
+  height: 84px;
+  border-bottom: 1px solid #ECEAEA;
+  text-align: center;
+  line-height: 83px;
+  color: #BCBCBC;
+  background-color: white;
+  position: relative;
+
+}
+/* 手机样式 */
+#new_welfare .new_phone{
+ /*  background: url('../../../images/fuli/newbackstyle/phone_bg.png') no-repeat 0px 0px; */
+  background: url('../../../images/fuli/newbackstyle/new_phoneContent.png') no-repeat 0px 0px; 
+  height: 660px;
+  padding-top: 70px;
+  /* padding-left: 70px; */
+}
+
+#new_welfare .new_phone #phone_content{
+  width: 340px;
+  height: 480px;
+  /*margin: 12px 0 0 25px;*/
+  overflow: hidden;
+  overflow-x: hidden;
+  position: relative;
+  margin-left: 2px;
+}
+#new_welfare .new_phone #phone_content i{
+  display: none;
+}
+#new_welfare .new_phone #phone_content div:focus{
+  border: 2px dotted #F86F4D;
+}
+#new_welfare .new_phone #phone_content div:hover>i{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-style: normal;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  text-align: center;
+  line-height: 20px;
+}
+#new_welfare .new_phone #phone_content span{
+  background: green;
+}
+#new_welfare .new_phone #phone_content span:hover>i{
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  font-style: normal;
+  position: absolute;
+  right: -10px;
+  top: -10px;
+  text-align: center;
+  line-height: 20px;
+}
+#new_welfare .new_phone #phone_content p{
+  word-wrap: break-word;
+}
+#new_welfare .new_title span {
+    width: 19%;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    display: inline-block;
+    margin-right: 4px;
+}
+
+
+#new_welfare #share_set{
+   background: url('../../../images/fuli/newbackstyle/share_bg.png') no-repeat;
+  width: 320px;
+  height: 480px;
+  margin: 0px 0 0 2px;
+  padding: 80px 0 0 55px;
+}
+#new_welfare #share_set .share_wrap{
+  border: 1px solid teal;
+  overflow: hidden;
+  height: 99px;
+  width: 226px;
+}
+#new_welfare #share_set .share_wrap{
+  padding: 5px;
+}
+#new_welfare #share_set .share_content{
+  position: relative;
+  height: 60px;
+}
+#new_welfare #share_set .share_wrap p{
+  margin-bottom: 5px;
+}
+#new_welfare #share_set .share_content p{
+  float: left;
+  font-size: 10px;
+  width: 155px;
+}
+#new_welfare #share_set .share_content img{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border: 1px solid 
+  teal;
+  vertical-align: text-top;
+}
+
+
+
+/* 默认样式 */
+#details_content #default_content section{
+  display: none;
+}
+#details_content #default_content section:nth-of-type(2) button{
+  width: 120px;
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  height: 40px;
+  outline: none;
+  background: white;
+  border: 1px solid #999999;
+  border-radius: 5px;
+}
+#details_content #default_content section:nth-of-type(2) button:hover{
+  background: #FFF0ED;
+  border: 1px solid #f86f4d;
+}
+#details_content #default_content section.current{
+  display: block;
+}
+/* 基本设置 */
+#new_welfare .new_detail .basic_set section{
+  height: 40px;
+  margin-bottom: 25px;
+}
+#new_welfare .new_detail .basic_set section span{
+  line-height: 40px;
+}
+#new_welfare .new_detail .basic_set section span i {
+  color: #F86F4D;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(1) button{
+	width:14%;
+  	max-width: 102px;
+	height: 57px;
+	background-color: #f9f9f9;
+	border-radius: 6px;
+  	border: solid 1px #999999;
+  	margin-right: 22px;
+  	padding-top: 7px;
+ 	outline: none;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(1) button:last-child{
+	margin-right:0;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(1) button.billtypeSelect{
+color: #f86f4d;
+  background: #FFF0ED;
+  border: solid 1px #F86F4D;
+} 
+
+#new_welfare .new_detail .basic_set section:nth-of-type(1) button p{
+  color: #949494;
+}
+
+/*  #new_welfare .new_detail .basic_set section:nth-of-type(1) button:focus{
+  color: #f86f4d;
+  background: #FFF0ED;
+  border: solid 1px #F86F4D;
+}  */
+
+#new_welfare .new_detail .basic_set section:nth-of-type(1) button:focus>p{
+  color: #f86f4d;
+}  
+
+
+#new_welfare .new_detail .basic_set section:nth-of-type(2) input{
+  display: none;
+  clip: rect(0, 0, 0, 0);
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(2) label{
+  display: inline-block;
+  margin-right: 50px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(2) input[type='radio']:checked + label::before{
+  background: #F86F4D;
+  background-clip: content-box;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(2) label::before{
+  content: '\a0';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  border: 1px solid #F86F4D;
+}
+
+#new_welfare .new_detail .basic_set section:nth-of-type(3) input{
+  display: none;
+  clip: rect(0, 0, 0, 0);
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(3) label{
+  display: inline-block;
+  margin-right: 75px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(3) input[type='radio']:checked + label::before{
+  background: #F86F4D;
+  background-clip: content-box;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(3) label::before{
+  content: '\a0';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  border: 1px solid #F86F4D;
+}
+
+
+
+#new_welfare .new_detail .basic_set section:nth-of-type(4) input{
+  display: none;
+  clip: rect(0, 0, 0, 0);
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(4) label{
+  display: inline-block;
+  margin-right: 50px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(4) input[type='radio']:checked + label::before{
+  background: #F86F4D;
+  background-clip: content-box;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(4) label::before{
+  content: '\a0';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  border: 1px solid #F86F4D;
+}
+
+
+
+
+
+
+
+#new_welfare .new_detail .basic_set section:nth-of-type(10) input{
+  display: none;
+  clip: rect(0, 0, 0, 0);
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(10){
+
+  margin-bottom: 15px;
+}
+
+#new_welfare .new_detail .basic_set section:nth-of-type(10) label{
+  display: inline-block;
+  margin-right: 15px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(10) input[type='radio']:checked + label::before{
+  background: #F86F4D;
+  background-clip: content-box;
+}
+#new_welfare .new_detail .basic_set section:nth-of-type(10) label::before{
+  content: '\a0';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  border: 1px solid #F86F4D;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 高级设置 */
+#new_detail {
+    /* padding-left: 62px; */
+    padding-top: 31px;
+    overflow-y: scroll;
+}
+#new_welfare .new_detail article {
+    display: none;
+}
+
+#new_welfare .new_detail article.current {
+    display: block;
+}
+
+#new_welfare .new_title span i {
+    font-style: normal;
+    width: 136px;
+    height: 42px;
+    display: inline-block;
+}
+
+#new_welfare .new_title span:nth-of-type(1) {
+    background: url('../../../images/fuli/newbackstyle/mouse_leave_short.png') no-repeat center;
+    background-size: 100% 100%;
+    top: 20px;
+}
+
+#new_welfare .new_title span:nth-of-type(2) {
+    width: 19%;
+    margin-left: -20px;
+    background: url('../../../images/fuli/newbackstyle/mouse_leave_long.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+#new_welfare .new_title span:nth-of-type(3) {
+    width: 19%;
+    margin-left: -20px;
+    background: url('../../../images/fuli/newbackstyle/mouse_leave_long.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+#new_welfare .new_title span:nth-of-type(4) {
+    width: 19%;
+    margin-left: -20px;
+    background: url('../../../images/fuli/newbackstyle/mouse_leave_long.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+#new_welfare .new_title span:nth-of-type(5) {
+    width: 18%;
+    margin-left: -20px;
+    background: url('../../../images/fuli/newbackstyle/five-leave.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+#new_welfare .new_title span:nth-of-type(1):hover {
+    color: #F86F4D;
+    background: url('../../../images/fuli/newbackstyle/mouse_hover_short.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+#new_welfare .new_title span:nth-of-type(2):hover {
+    color: #F86F4D;
+    background: url('../../../images/fuli/newbackstyle/mouse_hover_long.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+#new_welfare .new_title span:nth-of-type(3):hover {
+    color: #F86F4D;
+    background: url('../../../images/fuli/newbackstyle/mouse_hover_long.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+#new_welfare .new_title span:nth-of-type(4):hover {
+    color: #F86F4D;
+    background: url('../../../images/fuli/newbackstyle/mouse_hover_long.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+#new_welfare .new_title span:nth-of-type(5):hover {
+    color: #F86F4D;
+    background: url('../../../images/fuli/newbackstyle/five_hover.png') no-repeat center;
+    background-size: 100% 100%;
+}
+
+#new_welfare .new_title span:nth-of-type(1) i {
+    width: 11px;
+    height: 17px;
+    vertical-align: sub;
+    background: url('../../../images/fuli/newbackstyle/blank_0.png') no-repeat center;
+}
+#new_welfare .new_title span.current:nth-of-type(1) i{
+	background: url('../../../images/fuli/newbackstyle/blank_0.png') no-repeat center;
+}
+#new_welfare .new_title span.current:nth-of-type(2) i{
+	background: url('../../../images/fuli/newbackstyle/blank_1.png') no-repeat center;
+}
+#new_welfare .new_title span.current:nth-of-type(3) i{
+	background: url('../../../images/fuli/newbackstyle/blank_2.png') no-repeat center;
+}
+#new_welfare .new_title span.current:nth-of-type(4) i{
+	background: url('../../../images/fuli/newbackstyle/blank_3.png') no-repeat center;
+}
+#new_welfare .new_title span.current:nth-of-type(5) i{
+	background: url('../../../images/fuli/newbackstyle/blank_4.png') no-repeat center;
+}
+#new_welfare .new_title span:nth-of-type(2) i {
+    width: 11px;
+    vertical-align: sub;
+    height: 17px;
+    background: url('../../../images/fuli/newbackstyle/blank_gray_1.png') no-repeat center;
+}
+
+#new_welfare .new_title span:nth-of-type(3) i {
+    width: 11px;
+    height: 17px;
+    vertical-align: sub;
+    background: url('../../../images/fuli/newbackstyle/blank_gray_2.png') no-repeat center;
+}
+
+#new_welfare .new_title span:nth-of-type(4) i {
+    width: 11px;
+    height: 17px;
+    vertical-align: sub;
+    background: url('../../../images/fuli/newbackstyle/blank_gray_3.png') no-repeat center;
+}
+
+#new_welfare .new_title span:nth-of-type(5) i {
+    width: 11px;
+    height: 17px;
+    vertical-align: sub;
+    background: url('../../../images/fuli/newbackstyle/blank_gray_4.png') no-repeat center;
+}
+
+
+#new_welfare .new_title span.current:nth-of-type(1):hover>i {
+    background: url('../../../images/fuli/newbackstyle/blank_0.png') no-repeat center;
+}
+#new_welfare .new_title span:nth-of-type(2):hover>i {
+    background: url('../../../images/fuli/newbackstyle/two_orange.png') no-repeat center;
+}
+
+#new_welfare .new_title span:nth-of-type(3):hover>i {
+    background: url('../../../images/fuli/newbackstyle/three_orange.png') no-repeat center;
+}
+
+#new_welfare .new_title span:nth-of-type(4):hover>i {
+    background: url('../../../images/fuli/newbackstyle/four_orange.png') no-repeat center;
+}
+
+#new_welfare .new_title span:nth-of-type(5):hover>i {
+    background: url('../../../images/fuli/newbackstyle/five_orange.png') no-repeat center;
+}
+#new_welfare .new_detail .advanced_set section {
+    height: 40px;
+    margin-bottom: 31px;
+    padding-left: 8%;
+}
+
+#new_welfare .new_detail .advanced_set section i {
+    color: #F86F4D;
+}
+
+#new_welfare .new_detail .advanced_set section span {
+    line-height: 40px;
+}
+
+#new_welfare .new_detail .advanced_set section input {
+    line-height: 40px;
+    height: 100%;
+    margin-top: 5px;
+}
+
+#new_welfare .new_detail .advanced_set .new_photo {
+    height: auto;
+    overflow: hidden;
+  
+    margin-bottom: 0;
+    /* display: inline-block; */
+}
+
+#new_welfare .new_detail .advanced_set .new_photo span:nth-of-type(1) {
+    float: left;
+    line-height: 105px;
+}
+
+#new_welfare .new_detail .advanced_set .new_photo ul {
+    float: left;
+    margin-top: 7px;
+    margin-left: 5px;
+    /* margin-bottom: 31px; */
+    width: 80%;
+    /* overflow: hidden; */
+    /* display: flex; */
+}
+
+#new_welfare .new_detail .advanced_set .new_photo ul li {
+    float: left;
+    width: 140px;
+    height: 110px;
+    background-color: #ffffff;
+    border-radius: 4px;
+    border: solid 1px #dddddd;
+    line-height: 110px;
+    text-align: center;
+    position: relative;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    position:relative;
+}
+
+#new_welfare .new_detail .advanced_set .new_photo ul li a {
+    width: 110px;
+    height: 110px;
+    display: block;
+}
+
+#new_welfare .new_detail .advanced_set .new_photo ul li:hover>span {
+    display: block;
+}
+
+#new_welfare .new_detail .advanced_set .new_photo ul li span {
+    display: none;
+    width: 20px;
+    height: 20px;
+    background: #969393;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px !important;
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    cursor: pointer;
+    color: white;
+}
+#new_welfare .new_detail .advanced_set section input[type='radio']{
+  display: none;
+  clip: rect(0, 0, 0, 0);
+}
+#new_welfare .new_detail .advanced_set section label{
+  display: inline-block;
+  margin-right: 50px;
+  line-height: 40px;
+  vertical-align: middle;
+  /* float: left; */
+}
+#new_welfare .new_detail .advanced_set section input[type='radio']:checked + label::before{
+  background: #F86F4D;
+  background-clip: padding-box;
+  /* padding: 0.2em; */
+}
+#new_welfare .new_detail .advanced_set section input[type='radio'] + label::before{
+  content: '\a0';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  border: 1px solid #F86F4D;
+}
+/* 奖励设置 */
+#new_welfare .reward_set section{
+  height: 40px;
+  margin-bottom: 30px;
+}
+#new_welfare .reward_set section:nth-of-type(1){
+  height: 120px;
+  margin-bottom: 15px;
+}
+#new_welfare .reward_set section:nth-of-type(2){
+  height: 200px;
+  margin-bottom: 15px;
+}
+#new_welfare .reward_set section span i{
+  color: #F86F4D;
+}
+#new_welfare .reward_set section input{
+  display: none;
+  clip: rect(0, 0, 0, 0);
+}
+#new_welfare .reward_set section label{
+  display: inline-block;
+  margin-right: 15px;
+  line-height: 40px;
+  vertical-align: middle;
+}
+#new_welfare .reward_set section input[type='radio']:checked + label::before{
+  background: #F86F4D;
+  background-clip: content-box;
+}
+#new_welfare .reward_set section label::before{
+  content: '\a0';
+  display: inline-block;
+  vertical-align: middle;
+  width: 0.7em;
+  height: 0.7em;
+  border-radius: 50%;
+  border: 1px solid #F86F4D;
+}
+/* 福利详情 */
+/* #new_welfare .welfare_details section {
+  padding-left: 8%;
+} */
+#new_welfare .welfare_details section:nth-of-type(1) {
+  height: 40px;
+  margin-bottom: 25px;
+}
+#new_welfare .welfare_details section:nth-of-type(1) i{
+  color: #F86F4D;
+}
+#new_welfare .welfare_details section:nth-of-type(1) button{
+  width: 14%;
+  height: 40px;
+  background: white;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  margin-right: 13px;
+  outline: none;
+}
+
+#new_welfare .welfare_details section:nth-of-type(1) button:hover{
+  border: 1px solid #f86f4d;
+  background: #FFF0ED;
+}
+#new_welfare .welfare_details section:nth-of-type(1) button.current{
+  border: 1px solid #f86f4d;
+  background: #FFF0ED;
+}
+#new_welfare .welfare_details #details_content .spacial_div{
+  display: none;
+}
+#new_welfare .welfare_details #details_content .spacial_div.current{
+  display: block;
+}
+#new_welfare .welfare_details #details_content div:nth-of-type(1) section:nth-of-type(1) i{
+  color: #F86F4D;
+}
+
+#new_welfare .welfare_details #details_content #details_ul li{
+  position: relative;
+}
+#new_welfare .welfare_details #details_content #details_ul li input{
+  width: 289px;
+  border: 1px dotted #f86f4d;
+  height: 40px;
+  margin-left: 100px;
+}
+#new_welfare .welfare_details #details_content #details_ul li:hover>span{
+  display: block;
+}
+#new_welfare .welfare_details #details_content #details_ul li span{
+  display: none;
+  width: 20px;
+  height: 20px;
+  background: #969393;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 20px !important;
+  position: absolute;
+  top: -5px;
+  right: 40px;
+  cursor: pointer;
+  color: white;
+}
+#new_welfare .welfare_details #details_custom section:nth-of-type(1) button{
+  width: 14%;
+  height: 40px;
+  background: white;
+  border: 1px solid #999999;
+  border-radius: 5px;
+  margin-right: 13px;
+  outline: none;
+}
+#new_welfare .welfare_details #details_custom section:nth-of-type(1) button:hover{
+  border: 1px solid #f86f4d;
+}
+#new_welfare .welfare_details #details_custom section:nth-of-type(1) button.current{
+  background: #FFF0ED;
+  border: 1px solid #f86f4d;
+}
+/* 自定义样式-文本 */
+#new_welfare .welfare_details #details_custom #custom_div div{
+  display: none;
+}
+#new_welfare .welfare_details #details_custom #custom_div div.current{
+  display: block;
+}
+#new_welfare .welfare_details #details_custom #custom_div section:nth-of-type(1) span{
+  float: left;
+}
+#new_welfare .welfare_details #details_custom #custom_div section:nth-of-type(1) ul{
+  width: 70%;
+  float: left;
+}
+#new_welfare .welfare_details #details_custom #custom_div section:nth-of-type(1) ul li{
+  width: 40%;
+  float: left;
+  height: 35px;
+  margin-right: 15px;
+  margin-bottom: 15px;
+  text-align: center;
+  line-height: 35px;
+  border-radius: 5px;
+  border: 1px solid #999999;
+}
+#new_welfare .welfare_details #details_custom section:nth-of-type(3) span i{
+  color: #f86f4d;
+}
+#new_welfare .welfare_details #details_custom section:nth-of-type(3) input,label{
+ /* float: left; */
+ margin-right: 10px;
+}
+#new_welfare .welfare_details #details_custom section:nth-of-type(3) label{
+  margin-right: 20px;
+}
+#new_welfare .welfare_details #details_custom #custom_text_p p{
+  display: none;
+}
+#new_welfare .welfare_details #details_custom #custom_text_p p.current{
+  display: block;
+}
+/* 分享设置 */
+#new_welfare .share_set{
+  margin-left: 60px;
+}
+#new_welfare .share_set section{
+  margin-bottom: 30px;
+}
+#new_welfare .share_set section textarea{
+  width: 60%;
+}
+#new_welfare .share_set span i{
+  color: #f86f4d;
+}
+#new_welfare .share_set section button{
+  width: 120px;
+  border: 1px solid #999999;
+  height: 40px;
+  border-radius: 5px;
+  outline: none;
+  margin-left: 15px;
+}
+#new_welfare .share_set section button:hover{
+  background: #FFF0ED;
+  border-color: #F86F4D;
+}
+#new_welfare .share_set section img{
+  border: 1px solid #999999;
+  width: 120px;
+  height: 120px;
+  text-align: center;
+  line-height: 120px;
+  font-size: 20px;
+  color: #F86F4D;
+  display: inline-block;
+}
+/* 底部样式 */
+#new_welfare .new_foot{
+  background: white;
+  height: 80px;
+  padding-left: 50px;
+  position: fixed;
+  bottom: 15px;
+  width:100%;
+
+}
+#new_welfare .new_foot button{
+  width: 100px;
+	height: 40px;
+	background-color: white;
+	border-radius: 6px;
+  border: solid 1px #f86f4d;
+  color: #f86f4d;
+  margin-top: 20px;
+  margin-right: 29px;
+  outline: none;
+}
+#new_welfare .new_foot button:hover{
+  background: #F86F4D;
+  color: white;
+}

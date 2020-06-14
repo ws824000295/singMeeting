@@ -1,0 +1,366 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com</groupId>
+  <artifactId>springboot</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>war</packaging>
+  
+    <!-- 继承父包,此包会添加依赖,spring用到的核心包-->  
+    <parent>  
+        <groupId>org.springframework.boot</groupId>  
+        <artifactId>spring-boot-starter-parent</artifactId>  
+        <version>1.5.1.RELEASE</version>
+        <relativePath></relativePath>  
+    </parent>  
+  
+    <!-- spring-boot的web启动的jar包 -->  
+    <dependencies>  
+    
+	    <!-- axis 1.4 jar start -->
+	        <dependency>
+	            <groupId>org.apache.axis</groupId>
+	            <artifactId>axis</artifactId>
+	            <version>1.4</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>commons-discovery</groupId>
+	            <artifactId>commons-discovery</artifactId>
+	            <version>0.2</version>
+	            <exclusions>
+	                <exclusion>
+	                    <groupId>commons-logging</groupId>
+	                    <artifactId>commons-logging</artifactId>
+	                </exclusion>
+	            </exclusions>
+	        </dependency>
+		<dependency>
+			<groupId>axis</groupId>
+			<artifactId>axis-ant</artifactId>
+			<version>1.4</version>
+		</dependency>
+	        <dependency>
+	            <groupId>org.apache.axis</groupId>
+	            <artifactId>axis-jaxrpc</artifactId>
+	            <version>1.4</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>org.apache.axis</groupId>
+	            <artifactId>axis-saaj</artifactId>
+	            <version>1.4</version>
+	        </dependency>
+	        <dependency>
+	            <groupId>wsdl4j</groupId>
+	            <artifactId>wsdl4j</artifactId>
+	            <version>1.4</version>
+	        </dependency>
+	<!-- axis 1.4 jar end -->
+
+        <dependency>  
+            <groupId>org.springframework.boot</groupId>  
+            <artifactId>spring-boot-starter-web</artifactId>  
+        </dependency>  
+  
+        <!--jpa的jar包 ，操作数据库的，类似hibernate -->  
+        <dependency>  
+            <groupId>org.springframework.boot</groupId>  
+            <artifactId>spring-boot-starter-data-jpa</artifactId>  
+        </dependency>  
+  
+        <!--mysql驱动 -->  
+        <dependency>  
+            <groupId>mysql</groupId>  
+            <artifactId>mysql-connector-java</artifactId>  
+        </dependency>  
+  
+        <!--配置servlet-->  
+        <dependency>  
+            <groupId>javax.servlet</groupId>  
+            <artifactId>javax.servlet-api</artifactId>  
+        </dependency>  
+  
+        <!--配置jsp jstl的支持-->  
+        <dependency>  
+            <groupId>javax.servlet</groupId>  
+            <artifactId>jstl</artifactId>  
+        </dependency>  
+  
+        <!--添加对tomcat的支持-->  
+        <dependency>  
+           <groupId>org.springframework.boot</groupId>  
+           <artifactId>spring-boot-starter-tomcat</artifactId>  
+            <scope>provided</scope>  
+        </dependency>  
+  
+        <!--对jsp的支持-->  
+        <dependency>  
+            <groupId>org.apache.tomcat.embed</groupId>  
+            <artifactId>tomcat-embed-jasper</artifactId>  
+        </dependency>  
+        
+        <!--对redis的支持-->  
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+        </dependency>
+        
+        <!--对aop的支持-->  
+        <dependency>  
+		    <groupId>org.springframework.boot</groupId>  
+		    <artifactId>spring-boot-starter-aop</artifactId>  
+		</dependency>  
+				<!-- 添加springboot对amqp的支持 -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+		
+		<!--对security的支持-->  
+		<dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.security</groupId>
+            <artifactId>spring-security-taglibs</artifactId>
+        </dependency>
+        
+        <!--json-lib-->    
+		<dependency>    
+		    <groupId>net.sf.json-lib</groupId>    
+		    <artifactId>json-lib</artifactId>    
+		    <version>2.4</version>    
+		    <classifier>jdk15</classifier>    
+		</dependency>  
+		 <!-- freemarker jar -->
+		 <dependency>
+		     <groupId>org.freemarker</groupId>
+		     <artifactId>freemarker</artifactId>
+		     <version>2.3.23</version>
+		 </dependency>
+		 <!--本地jar包-->    
+		<dependency>
+		     <groupId>json</groupId>
+		     <artifactId>json</artifactId>
+		     <scope>system</scope>
+		     <version>1.0</version>
+		     <systemPath>${project.basedir}/lib/json.jar</systemPath>
+		  </dependency>
+		<dependency>
+		     <groupId>bcprov</groupId>
+		     <artifactId>bcprov</artifactId>
+		     <scope>system</scope>
+		     <version>1.0</version>
+		     <systemPath>${project.basedir}/lib/bcprov-jdk15on-157.jar</systemPath>
+		  </dependency>
+		  <dependency>
+		     <groupId>ehcache</groupId>
+		     <artifactId>ehcache</artifactId>
+		     <scope>system</scope>
+		     <version>1.0</version>
+		     <systemPath>${project.basedir}/lib/ehcache-core-2.4.3.jar</systemPath>
+		  </dependency>
+		  <dependency>
+		     <groupId>terminal</groupId>
+		     <artifactId>terminal</artifactId>
+		     <scope>system</scope>
+		     <version>1.1</version>
+		     <systemPath>${project.basedir}/lib/terminal-1.1.jar</systemPath>
+		  </dependency>
+		  <dependency>
+		     <groupId>fastjson</groupId>
+		     <artifactId>fastjson</artifactId>
+		     <scope>system</scope>
+		     <version>1.1</version>
+		     <systemPath>${project.basedir}/lib/fastjson-1.1.8.jar</systemPath>
+		  </dependency>
+		  
+		  <dependency>
+		     <groupId>gson</groupId>
+		     <artifactId>gson</artifactId>
+		     <scope>system</scope>
+		     <version>2.8.5</version>
+		     <systemPath>${project.basedir}/lib/gson-2.8.5.jar</systemPath>
+		  </dependency>
+		  
+		  
+		  <dependency>
+		     <groupId>yop-java-sdk</groupId>
+		     <artifactId>yop-java-sdk</artifactId>
+		     <scope>system</scope>
+		     <version>1.1</version>
+		     <systemPath>${project.basedir}/lib/yop-java-sdk-3.0.5-jdk18.jar</systemPath>
+		  </dependency>
+		  <!--对commons包-->    
+		  <dependency>
+			 <groupId>commons-io</groupId>
+			 <artifactId>commons-io</artifactId>
+			 <version>2.4</version>
+		  </dependency>
+		  			
+	      <dependency>
+		    <groupId>commons-codec</groupId>
+		    <artifactId>commons-codec</artifactId>
+		    <version>1.10</version>
+		  </dependency>
+		  
+		  <dependency>
+		    <groupId>jaxen</groupId>
+		    <artifactId>jaxen</artifactId>
+		    <version>1.1.6</version>
+		  </dependency>
+
+		  <dependency>
+	        <groupId>com.google.code.gson</groupId>
+	        <artifactId>gson</artifactId>
+	      </dependency>
+	      
+	      <dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-lang3</artifactId>
+		    <version>3.0</version>
+		 </dependency>
+		 
+		 <dependency>
+		   <groupId>org.redisson</groupId>
+		   <artifactId>redisson</artifactId>
+		   <version>3.4.2</version>
+		 </dependency> 
+		 
+		 <dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi</artifactId>
+		    <version>3.9</version>
+		 </dependency>
+		 
+		 <dependency>
+		    <groupId>org.apache.poi</groupId>
+		    <artifactId>poi-ooxml</artifactId>
+		    <version>3.16</version>
+		 </dependency>
+		 
+		 <dependency>
+		     <groupId>QRCode</groupId>
+		     <artifactId>QRCode</artifactId>
+		     <scope>system</scope>
+		     <version>1.0</version>
+		     <systemPath>${project.basedir}/lib/QRCode.jar</systemPath>
+		  </dependency> 
+		 
+		  
+    <!-- 发送邮件 -->
+		<dependency>
+		   <groupId>org.apache.commons</groupId>
+		   <artifactId>commons-email</artifactId>
+		   <version>1.4</version>
+		</dependency>
+		
+		<dependency>  
+		    <groupId>org.apache.commons</groupId>  
+		    <artifactId>commons-collections4</artifactId>  
+		    <version>4.1</version>
+		</dependency> 
+		
+  		<dependency>
+	         <groupId>org.apache.poi</groupId>
+	         <artifactId>poi</artifactId>
+	         <version>3.10-FINAL</version>
+	     </dependency>
+	     
+	     <dependency>
+	         <groupId>org.apache.poi</groupId>
+	         <artifactId>poi-ooxml</artifactId>
+	         <version>3.10-FINAL</version>
+	     </dependency>
+	     
+	   <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session</artifactId>
+        </dependency>
+	     
+		<dependency>  
+            <groupId>org.springframework.boot</groupId>  
+            <artifactId>spring-boot-starter-activemq</artifactId>  
+        </dependency> 
+        
+   
+       </dependencies> 
+       
+     <!--maven的插件-->
+    <build>
+	    <!-- 配置java版本 不配置的话默认父类配置的是1.6-->
+	      <plugins>
+	        <plugin>
+	          <artifactId>maven-compiler-plugin</artifactId>
+	          <configuration>
+	            <source>1.8</source>
+	            <target>1.8</target>
+	            <compilerArguments>  
+                    <bootclasspath>${java.home}/lib/rt.jar;${java.home}/lib/jce.jar</bootclasspath>  
+                </compilerArguments>  
+	          </configuration>
+	        </plugin>
+	        
+	        <plugin>
+	          <groupId>org.apache.maven.plugins</groupId>
+              <artifactId>maven-war-plugin</artifactId>
+               <configuration>
+                  <webResources>
+                      <resource>
+                          <directory>${project.basedir}/lib</directory>
+                          <targetPath>WEB-INF/lib</targetPath>
+                          <filtering>false</filtering>
+                          <includes>
+                              <include>**/*.jar</include>
+                          </includes>
+                      </resource>
+                  </webResources>
+              </configuration>
+	       </plugin>
+	       
+	       <plugin>
+				<groupId>net.alchim31.maven</groupId>
+				<artifactId>yuicompressor-maven-plugin</artifactId>
+				<version>1.4.0</version>
+				<!-- <executions>
+					<execution>
+						在真正的打包之前，执行一些准备打包压缩操作的操作
+						<phase>prepare-package</phase>
+						<goals>
+							<goal>compress</goal>
+						</goals>
+					</execution>
+				</executions> -->
+				<configuration>
+					<encoding>UTF-8</encoding>
+					<!-- 忽视 js 错误警告 -->
+					<jswarn>false</jswarn>
+					<nosuffix>true</nosuffix>
+					<linebreakpos>-1</linebreakpos>
+					<!-- 压缩的文件 工程里面所有的 js css 后缀的都会压缩 -->
+				<!-- 	<includes>
+						<include>**/*.js</include>
+						<include>**/*.css</include>
+					</includes>
+					不需要压缩的文件
+					<excludes>
+						<exclude>**/*.min.js</exclude>
+						<exclude>**/*.min.css</exclude>
+					</excludes> -->
+					<failOnWarning>false</failOnWarning>
+				</configuration>
+			</plugin>
+			<!-- 当压缩没有填写输出目录 或者 输出目录和压缩目录是同一路径时 一定要配合下面的使用 -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<configuration>
+					<!-- 如果不增加此配置 src/main/webapp 下面的内容 会重新复制到target输出目录 覆盖掉编译后的内容 这样编译的还是未压缩过的内容，增加上此过滤 打war包就不会内容覆盖 -->
+					<warSourceExcludes>%regex[^.+(?:(?&lt;!(?:-|.)min).js)], %regex[^.+(?:(?&lt;!(?:-|.)min).css)]</warSourceExcludes>
+				</configuration>
+			</plugin>
+	        
+	      </plugins>
+	    
+	    <finalName>meet</finalName>
+	  </build>
+</project>

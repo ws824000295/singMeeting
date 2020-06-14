@@ -1,0 +1,226 @@
+body{
+	background: #f0eff5;
+}
+.coupon_type_tab{
+	width:100%;
+	height: 1.3rem;
+	line-height: 1.35rem;
+	display: flex;
+	font-size: 0.4rem;
+	background: #fff;
+	text-align: center;
+	color: #a3a3a3;
+}
+.coupon_type{
+	flex: 1;
+	float: left;
+}
+.coupon_type.active{
+	color: #f8614a;
+	border-bottom: 0.05rem solid #f8614a;
+}
+.icon-inline{
+	display: inline-block;
+}
+.icon-one{
+	width: 0.387rem;
+	height: 0.506rem;
+	vertical-align: middle;
+	margin-right: .28rem;
+	margin-top: -0.1rem;
+}
+.coupon_type .icon-one{
+	background: url('../../../images/coupon/oneCard_gray.png') no-repeat center;
+	background-size: 100%;
+}
+.coupon_type.active .icon-one{
+	background: url('../../../images/coupon/oneCard.png') no-repeat center;
+	background-size: 100%;
+}
+.icon-fx{
+	width: 0.4rem;
+	height: 0.48rem;
+	vertical-align: middle;
+	margin-right: .28rem;
+	margin-top: -0.1rem;
+}
+.coupon_type .icon-fx{
+	background: url('../../../images/coupon/fxcou_gray.png') no-repeat center;
+	background-size: 100%;
+}
+.coupon_type.active .icon-fx{
+	background: url('../../../images/coupon/fxcou.png') no-repeat center;
+	background-size: 100%;
+}
+.coupon_status_tab{
+	width: 100%;
+	height: auto;
+	background:#fff;
+}
+.coupon_status{
+	float: left;
+	width: 33.3%;
+	line-height: .67rem;
+	text-align: center;
+	color: #404040;
+}
+.coupon_status>div{
+	width:70%;
+	margin:auto;
+	padding: 0.23rem 0;
+}
+.coupon_status:last-child{
+	margin-right: 0;
+}
+.coupon_status.active div{
+	color: #f8614a;
+	border-bottom:0.05rem solid #f8614a;
+	font-size:0.35rem;
+	font-weight:bold;
+}
+.coupon_list{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: 1.23rem 0.267rem 0.4rem 0.3rem
+}
+.coupon_item{
+	width: 100%;
+	height: 3.79rem;
+	position: relative;
+	overflow: hidden;
+	margin-top: .32rem;
+}
+.nouse{
+	background: url('../../../images/coupon/coupon_bg.png') no-repeat center;
+	background-size: 100% 100%;
+}
+.alreadyuse,.overdue{
+	background: url('../../../images/coupon/coupon_bg_gray.png') no-repeat center;
+	background-size: 100% 100%;
+}
+.coupon_top{
+	height: 2.4rem;
+	position: relative;
+}
+.coupon_top_lf{
+	float: left;
+	width: 35%;
+	text-align: center;
+	font-size: 0.29rem;
+	color: #404040;
+	padding-top: .4rem;
+	font-weight: bold;
+}
+.amount{
+	color: #333;
+	font-weight: 100;
+}
+.nouse .amount{
+	color: #f21142;
+}
+.amount span{
+	font-size: .83rem;
+	margin-left: .12rem;
+}
+.coupon_top_rg{
+	float: right;
+	width: 65%;
+	display: flex;
+	align-items: flex-start;
+	padding: .5rem .26rem .4rem .37rem;
+}
+.shop_logo{
+	width: 1.36rem;
+	height: 1.36rem;
+	border: 1px solid #ebeaed;
+	border-radius: 0.12rem;
+}
+.shop_logo img{
+	width: 100%;
+	border-radius: 0.12rem;
+	height: 100%;
+}
+.name-btn{
+	flex: 1;
+	margin-left: 0.26rem;
+}
+.shop_name{
+	color: #000;
+	font-size: .32rem;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.buynow{
+	-webkit-appearance: none;
+	display: block;
+	width: 2.3rem;
+	height: .56rem;
+	background: #f21142;
+	color: #fff;
+	border: none;
+	font-size: .32rem;
+	border-radius: 0.3rem;
+	line-height: .56rem;
+	text-align: center;
+	float: right;
+	margin-top: .44rem;
+}
+.icon{
+	display: block;
+}
+.icon-alreadyuse,.icon-overdue{
+	width: 1.93rem;
+	height: 1.93rem;
+	position: absolute;
+	right: 0.37rem;
+	top: 0.4rem;
+	z-index: 9;
+}
+.icon-alreadyuse{
+	background: url('../../../images/coupon/alreadyuse.png') no-repeat center;
+	background-size: 100% 100%;
+}
+.icon-overdue{
+	background: url('../../../images/coupon/overdue.png') no-repeat center;
+	background-size: 100% 100%;
+}
+.coupon_bottom{
+	width: 100%;
+	clear: both;
+	line-height: .84rem;
+	padding: 0 .4rem;
+}
+.coupon_code span{
+	color: #868686;
+}
+.validity{
+	color: #868686;
+	float: left;
+	line-height: .5rem;
+}
+.surplus{
+	float: right;
+	color: #f21142;
+	line-height: .5rem;
+}
+
+.clearfix:after {
+   content:""; 
+   display: block; 
+   clear:both; 
+}
+.me_none {
+	width: 6rem;
+	background: url(../../../images/fuli/xin01.png) no-repeat center;
+	background-size: 2.77rem 2.77rem;
+	margin: 2rem auto;
+	text-align: center;
+	color: #999999;
+	padding-top: 11rem;
+	font-size: 0.28rem;
+	height: 1.9rem;
+}
+

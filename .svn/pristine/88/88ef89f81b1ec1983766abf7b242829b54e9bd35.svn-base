@@ -1,0 +1,146 @@
+body{
+	background: #f2f2f2;
+}
+.oredr-item{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding: .27rem .4rem;
+	margin-bottom: 0.24rem;
+	background: #fff;
+}
+.item-top{
+	border-bottom:1px solid #ddd ;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 0.27rem;
+}
+.shop-info{
+	float: left;
+	display: flex;
+	align-items: center;
+}
+.shop-logo{
+	width: 0.67rem;
+	height: 0.67rem;
+	border-radius: 50%;
+	overflow: hidden;
+	display: inline-block;
+}
+.shop-logo img{
+	width: 100%;
+	height: 100%;
+}
+.shop-name{
+	color: #666;
+	font-size: .37rem;
+	display: inline-block;
+	margin-left: 0.3rem;
+}
+.icon-cart{
+	display: inline-block;
+	width: 0.24rem;
+	height: .32rem;
+	background: url('../../../images/fuli/go.png') no-repeat center;
+	background-size: 100%;
+}
+.status{
+	float: right;
+	color: #f8614a;
+	font-size: .37rem;
+}
+.item-flex{
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	margin-top: .4rem;
+	padding-bottom: .4rem;
+	border-bottom:1px solid #ddd ;
+}
+.goods-thumb{
+	width: 3rem;
+	height: 1.68rem;
+}
+.goods-thumb img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.title-price{
+	flex: 1;
+	color: #666;
+	font-size: .37rem;
+	margin-left:0.2rem;
+}
+.count{
+	width: 1rem;
+	text-align: right;
+}
+.item-total{
+	text-align: right;
+	border-bottom: 1px solid #ddd;
+	padding: .3rem 0;
+}
+.icon-phone{
+	display: inline-block;
+	width: .4rem;
+	height: .37rem;
+	background: url('../../../images/fuli/connect.png') no-repeat center;
+	background-size: 100%;
+	margin-right: 0.27rem;
+}
+.item-bottom{
+	padding-top: .27rem;
+	height: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bottom-lf{
+	float: left;
+}
+.bottom-lf span{
+	color: #666;
+	font-size: .35rem;
+}
+.bottom-rg{
+	float: right;
+}
+.bottom-rg input{
+	-webkit-appearance: none;
+	background: #fff;
+	border-radius: 1.5rem;
+	margin-right: .27rem;
+}
+.bottom-rg input:last-child{
+	margin-right: 0;
+}
+.bottom-rg .order-btn-red{
+	color: #f8614a;
+	border: 1px solid #f8614a;
+	padding: 0.1rem .2rem;
+}
+.bottom-rg .order-btn-gray{
+	color: #666;
+	border: 1px solid #666;
+    padding: .1rem .2rem;
+}
+.me_none {
+	width: 6rem;
+	background: url(../../../images/fuli/xin01.png) no-repeat center;
+	background-size: 2.77rem 2.77rem;
+	margin: 2rem auto;
+	text-align: center;
+	color: #999999;
+	padding-top: 2.8rem;
+	font-size: 0.28rem;
+	height: 1.9rem;
+}
+.bottom-lf a{
+    display: flex;
+    align-items: center;
+}

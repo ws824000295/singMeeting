@@ -1,0 +1,251 @@
+*{
+	padding:0;
+	margin:0;
+	list-style: none;
+	font-size:0;
+}
+html,body{
+	min-height:100%;
+}
+body{
+	background:url(../../../images/fuli/top-bg.png) no-repeat;
+	background-size:100%;
+}
+
+.fix{display:inline-block;}
+.fix{display:block;}
+.fix:after{content:"";display:block;height:0px; clear:both;visibility:hidden;}
+.pack{
+	padding:.4rem;
+}
+.pack-con{
+	padding:.25rem;
+	background:#fff;
+	border-radius:.2rem;
+	margin-top:1.8rem;
+	padding-bottom:.5rem;
+	box-shadow:0rem 0rem .2rem rgba(0,0,0,0.1);
+}
+.gift{
+	padding:.4rem .2rem;
+	border-radius:.15rem;
+	background:url(../../../images/fuli/pack-con.png) no-repeat;
+	background-size:100%;
+}
+.gift dl dt{
+	width:1rem;
+	height:1rem;
+	background:url(../../../images/fuli/css-sprit.png) no-repeat;
+	background-size:3.5rem;
+	background-position: 0rem 0rem;
+	float:left;
+}
+.gift dl dd{
+	padding-left:.3rem;
+	color:#333;
+	font-size:.35rem;
+ 	overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    word-break: break-all;
+    padding-right:1rem;
+    position:relative;
+}
+.more{
+	position:absolute;
+	display:block;
+    width: .4rem;
+    height: .7rem;
+	background:url(../../../images/fuli/css-sprit.png) no-repeat;
+	background-size:3.5rem;
+	background-position: 0rem -1.2rem;
+	z-index:200;
+	right:0;
+	top:50%;
+	margin-top:-.35rem;
+}
+.pack-title{
+	color:#ff554e;
+	font-size:.38rem;
+	font-weight:bold;
+	padding:.3rem 0;
+}
+.give{
+	font-size:.35rem;
+}
+.give>p{
+	font-size:.38rem;
+	color:#333;
+}
+.select-give label{
+	font-size:.38rem;
+}
+.select-ps{
+	font-size:.28rem;
+	color:#999;
+	padding-left:.8rem;
+	padding-top:.1rem;
+}
+.give-function{
+	padding-top:.3rem;
+}
+label {                 /*设置label的样式*/
+    width: 100%;
+    display: block;
+    position: relative;
+    font-weight: normal;
+	-webkit-tap-highlight-color:rgba(255,0,0,0);
+}
+.radio .option {      /*把优化后的按钮图片设置为该div的背景图片，把该div定位到原生样式的上方，遮盖住原生样式。*/
+    width: .5rem;
+    height: .5rem;
+    position: absolute;
+    left: 0px;
+    top:.04rem;
+    background: url(../../../images/fuli/css-sprit.png) no-repeat;
+    background-size: 4rem;
+	background-position:0rem -2.92rem;
+}
+.radio input{
+	width: .5rem;
+    height: .5rem;
+    float:left;
+}
+.radio input[type="radio"] {  /*为了保险起见，把原生样式隐藏掉*/
+    display: inline-block ;
+    margin-right: .3rem ;
+    opacity: 0 ;
+}
+input[type="radio"]:checked+div {  /*当radiuo被选中时，把input下边的div标签的背景图片替换掉*/
+    background: url(../../../images/fuli/css-sprit.png) no-repeat;
+    background-size: 4rem;
+	background-position: 0rem -2.36rem;
+}
+.opt-text{
+	font-size:.38rem;
+}
+.radio{
+	margin-bottom:.3rem;
+}
+.h1{
+	border:0.01rem solid #fff;
+	opacity:0;
+}
+.acount{
+	padding:.25rem .3rem;
+	background:#f0f0f0;
+	border-radius:.15rem;
+	margin-top:.3rem;
+}
+.acount>div{
+	padding:.2rem 0;
+}
+.acount dl dt{
+	font-size:.35rem;
+	color:#333;
+	float:left;
+	height:.6rem;
+	line-height:.6rem;
+}
+.acount dl dd{
+	padding-left:2.2rem;
+	height:.6rem;
+	width:3rem;
+	font-size:.28rem;
+	line-height:.6rem;
+	color:#999;
+}
+.acount dl dd input{
+	height:100%;
+	width:100%;
+	box-sizing: border-box;
+	background:#f0f0f0;
+	outline: none;
+	border:none;
+	font-size:.25rem;
+	line-height:initial;
+}
+.acount>div{
+	position:relative;
+}
+.num_box{
+	width:100%;
+	float:left;
+}
+.num_box a{
+	width:.7rem;
+	height:.7rem;
+	text-align:center;
+	cursor:pointer;
+	font-size:.55rem;
+	background:#fff;
+	line-height:.6rem;
+	text-decoration: none;
+}
+.num_box a:active{
+	background:#E3E3E3;
+}
+.num,.num_box a{
+	height:.7rem;
+	line-height:.6rem;
+	color:#333;
+	float:left;
+    border: 0.02rem solid #333;
+}
+.num{
+	text-align:center;
+	padding:0;
+	margin:0;
+	width:.8rem;
+	outline: none;
+	font-size:.3rem;
+	border:none;
+	border-top:0.02rem solid #333;
+	border-bottom:0.02rem solid #333;
+	-webkit-appearance:none !important;
+	border-radius:0;
+}
+.num_box .J_jia{
+	border-top-right-radius:.1rem;
+	border-bottom-right-radius:.1rem;
+}
+.num_box .J_jian{
+	border-top-left-radius:.15rem;
+	border-bottom-left-radius:.15rem;
+}
+.sl{
+	position:absolute;
+	width:2.4rem;
+	right:0;
+	top:50%;
+	margin-top:-.35rem;
+}
+.bth-1{
+	font-size:.4rem;
+	color:#fff;
+	background:#ff534c;
+	border-radius:.15rem;
+	padding:.25rem 0;
+	text-align:center;
+	display:block;
+	text-decoration: none;
+	margin-top:.6rem;
+	border:0.02rem solid #ff534c;
+}
+.btn-2{
+	font-size:.4rem;
+	color:#ff534c;
+	background:#fff;
+	border-radius:.15rem;
+	padding:.25rem 0;
+	text-align:center;
+	display:block;
+	text-decoration: none;
+	margin-top:.4rem;
+	border:0.02rem solid #ff534c;
+}
+.dn{
+	display:none;
+}

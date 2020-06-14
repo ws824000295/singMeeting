@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<style type="text/css">
+			* {
+				padding: 0;
+				margin: 0;
+				border: 0;
+				box-sizing: border-box;
+			}
+
+			.page-box {
+				width: 900px;
+				height: auto;
+				overflow: hidden;
+				margin: 50px auto;
+			}
+
+			.add-btn-box {
+				width: 100%;
+				height: 60px;
+			}
+
+			.add-btn-box button {
+				cursor: pointer;
+				-webkit-appearance: none;
+				text-align: center;
+				outline: 0;
+				padding: 12px 20px;
+				font-size: 14px;
+				border-radius: 4px;
+				color: #fff;
+				background-color: #409eff;
+			}
+
+			.checkbox-box {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				background: #f3f3f3;
+				padding: 20px 25px;
+				font-size: 14px;
+				display: flex;
+				align-items: center;
+			}
+
+			.checkbox-box span {
+				margin: 0 20px 0 6px;
+				color: #222;
+			}
+
+			.table-box {
+				width: 100%;
+				height: auto;
+				overflow: hidden;
+				margin-top: 17px;
+			}
+
+			.table-title {
+				width: 100%;
+				height: 48px;
+				line-height: 48px;
+				background: #f3f3f3;
+			}
+
+			.table-item {
+				display: inline-block;
+				width: 176px;
+				text-align: center;
+				font-size: 12px;
+				color: #666;
+			}
+
+			.table-row {
+				width: 100%;
+				height: 70px;
+				line-height: 70px;
+				border: 1px solid #ebeef5;
+				border-top: none;
+			}
+
+			.table-row:hover {
+				background: #f5f7fa;
+			}
+
+			.table-row .table-item {
+				width: 175px;
+				border-right: 1px solid #ebeef5;
+			}
+
+			.table-row .table-item:last-child {
+				border-right: none;
+			}
+
+			.btn-sm {
+				cursor: pointer;
+				-webkit-appearance: none;
+				text-align: center;
+				outline: 0;
+				font-size: 12px;
+				border-radius: 4px;
+				color: #409eff;
+				background: #fff;
+				text-decoration: underline;
+				padding: 6px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="page-box">
+			<div class="add-btn-box">
+				<button type="button">按钮</button>
+			</div>
+			<div class="checkbox-box">
+				<input class="checkbox-item" type="checkbox" name="checkbox3" value="checkbox复选1" /><span>复选1</span>
+				<input class="checkbox-item" type="checkbox" name="checkbox3" value="checkbox复选2" /><span>复选2</span>
+				<input class="checkbox-item" type="checkbox" name="checkbox3" value="checkbox复选3" /><span>复选3</span>
+			</div>
+			<div class="table-box">
+				<div class="table-title">
+					<div class="table-item">表头1</div>
+					<div class="table-item">表头2</div>
+					<div class="table-item">表头3</div>
+					<div class="table-item">表头4</div>
+					<div class="table-item">表头5</div>
+				</div>
+				<div class="table-row">
+					<div class="table-item">内容1</div>
+					<div class="table-item">内容2</div>
+					<div class="table-item">内容3</div>
+					<div class="table-item">内容4</div>
+					<div class="table-item">
+						<button class="btn-sm" type="button">按钮1</button>
+						<button class="btn-sm" type="button">按钮2</button>
+					</div>
+				</div>
+				<div class="table-row">
+					<div class="table-item">内容1</div>
+					<div class="table-item">内容2</div>
+					<div class="table-item">内容3</div>
+					<div class="table-item">内容4</div>
+					<div class="table-item">
+						<button class="btn-sm" type="button">按钮1</button>
+						<button class="btn-sm" type="button">按钮2</button>
+					</div>
+				</div>
+				<div class="table-row">
+					<div class="table-item">内容1</div>
+					<div class="table-item">内容2</div>
+					<div class="table-item">内容3</div>
+					<div class="table-item">内容4</div>
+					<div class="table-item">
+						<button class="btn-sm" type="button">按钮1</button>
+						<button class="btn-sm" type="button">按钮2</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

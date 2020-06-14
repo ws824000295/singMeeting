@@ -1,0 +1,61 @@
+package com.boot.common.base;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public enum FuCoinEnum {
+	ONE(2, 1), TWO(4, 2), THREE(6, 3), FOUR(8, 4), FIRE(10, 5), SEX(15, 6), SEVEN(
+			20, 7);
+
+	private FuCoinEnum(Integer fuNumber, Integer day) {
+		this.fuNumber = fuNumber;
+		this.day = day;
+	}
+
+	private Integer fuNumber; // 福钻个数
+
+	private Integer day; // 连续签到天数
+
+	public Integer getFuNumber() {
+		return fuNumber;
+	}
+
+	public void setFuNumber(Integer fuNumber) {
+		this.fuNumber = fuNumber;
+	}
+
+	public Integer getDay() {
+		return day;
+	}
+
+	public void setDay(Integer day) {
+		this.day = day;
+	}
+
+	//根据连续签到天数，获取应获得的福钻数
+	public static Integer getCoinByDay(Integer day) {
+		for (FuCoinEnum c : FuCoinEnum.values()) {
+			if (c.getDay() == day) {
+				return c.getFuNumber();
+			}
+		}
+
+		return null;
+	}
+
+	
+	public static List<Integer> getFuCoins(){
+		List<Integer> fuCoins = new ArrayList<>();
+		
+		for (FuCoinEnum c : FuCoinEnum.values()) {
+			fuCoins.add(c.getFuNumber());
+		}
+		
+		return fuCoins;
+	}
+	
+	public static void main(String[] args) {
+		Integer code = FuCoinEnum.getCoinByDay(3);
+		System.out.println(code);
+	}
+}

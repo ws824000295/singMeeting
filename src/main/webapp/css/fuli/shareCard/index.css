@@ -1,0 +1,64 @@
+body{
+  background: #353535;
+  position: relative;
+}
+.share_content{
+  width: 7.573333rem;
+  height: 12.32rem;
+  /* background: #fff; */
+  margin: 0 auto;
+  margin-top: .546667rem;
+  border-radius: .333333rem;
+  display: none;;
+}
+.share_content img{
+  width: 100%;
+  border-radius: .333333rem;
+}
+.share_send{
+  height: .8rem;
+  background: #4c9716;
+  color: white;
+  font-size: .4rem;
+  line-height: .8rem;
+  text-align: center;
+}
+.share_foot{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+.share_footNav{
+  height: 1.813333rem;
+  background: #fff;
+  display: flex;
+  align-items: center !important;
+  padding: .213333rem .293333rem !important;
+}
+
+.share_show{
+  display: block;
+}
+.footNav_outer{
+  position: relative;
+  width: 1.386667rem !important;
+  height: 1.386667rem;
+}
+.share_footNav .footNav_outer img{
+  width: 100%;
+  display: inline-block;
+}
+.share_click{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url('../../../images/selectshare/heart.png');
+  width: 1.386667rem;
+  height: 1.386667rem;
+  background-size: .586667rem .506667rem;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  display: none;
+  background-color: rgba(0,0,0,0.5);
+}

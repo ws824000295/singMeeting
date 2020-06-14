@@ -1,0 +1,411 @@
+.weflare_manage{
+  background: #F2F2F2;
+  background-image: url('../../images/view/bg.png');
+  background-size: 10rem 2.68rem;
+  background-repeat: no-repeat;
+}
+#radioSwiperFriends{
+  height: .8rem;
+  background: #fcf3df;
+  display: flex;
+  align-items: center;
+  margin-bottom: .266667rem;
+  padding-left: 0.43rem;
+  
+  
+}
+#radioSwiperFriends .radio1_img{
+  background: url('../../images/view/radio1.png') no-repeat;
+  width: .373333rem;
+  height: .346667rem;
+  background-size: 100% 100%;
+  display: inline-block;
+  border: 0;
+}
+#radioSwiperFriends .radio_content{
+  color: #5b420a;
+  font-size: .32rem;
+  line-height: 0.8rem;
+  text-align: start;
+  padding-left: 0.267rem;
+  
+}
+#radioSwiperFriends .radio_content .radio_li{
+  line-height: 0.8rem;
+  display: flex;
+  align-items: center;
+}
+.classify{
+  width: 9.4666667rem;
+  height: 2.4rem;
+  background-color: #fff;
+  border-radius: .266667rem;
+  margin: 0 auto;
+  display: flex;
+  /* justify-content: space-around; */
+  align-items: center;
+  margin-bottom: .266667rem;
+}
+.classify .classify_div{
+  text-align:  center;
+}
+.classify .classify_wrap{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 9.026667rem;
+  margin: 0 auto;
+  -webkit-tap-highlight-color: transparent;
+}
+.classify .classify_div img{
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  margin: 0 auto;
+  /* margin-bottom: .226667rem; */
+}
+.classify .classify_div span{
+  font-size: .32rem;
+  color: #666;
+}
+.banner1{
+  width: 9.466667rem;
+  height: 1.866667rem;
+  margin: 0 auto;
+  margin-bottom: .266667rem;
+  background: url('../../images/view/banner1.png') no-repeat;
+  background-size: 100% 100%;
+  -webkit-tap-highlight-color: transparent;
+}
+.welfare_date{
+  background: #fff;
+  padding-top: .2rem;
+  margin-bottom: .266667rem;
+  padding-bottom: .533333rem;
+}
+.myIcon{
+  display: flex;
+  justify-content: space-between;
+  margin-left: .266667rem;
+  
+}
+.myIcon span{
+  font-size: .48rem;
+  color: #1c1b20;
+}
+.myIcon .iconNum{
+  width: 4.2rem;
+  height: .666667rem;
+  background-color: #fe3657;
+  border-radius: .333333rem 0 0 .333333rem;
+  color: #fff;
+  text-align: center;
+  font-size: .266667rem;
+  line-height: 0.66667rem;
+  margin-bottom: .266667rem;
+  box-shadow: 0px 2px 2px rgba(255,16,87,0.2);
+}
+.myIcon .iconNum span{
+  font-size: .373333rem;
+  color: #fff;
+}
+.myIcon .iconNum i{
+  font-style: normal;
+}
+.icon_countOuer{
+  width: 9.333333rem;
+  height: 7.866667rem;
+  background-color: #ffffff;
+  border-radius: .133333rem;
+  box-shadow: 0px 0px 10px #ccc;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+}
+.icon_countOuer #icon_count{
+  float: left;
+  width: 4rem;
+  height: 4rem;
+  margin-top: .433333rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.icon_countOuer #icon_count span {
+  font-size: .266667rem;
+  color: #000;
+}
+.icon_countOuer #icon_count i{
+  font-style: normal;
+  font-size: 34px;
+  color: #000;
+}
+.icon_countOuer .count_ul{
+  float: left;
+  width: 4.266667rem;
+  height: 3.066667rem;
+  list-style: disc;
+  margin-top: .6rem;
+}
+.icon_countOuer .count_ul li{
+  color: #666;
+  font-size: .346667rem;
+  margin-bottom: 0.1rem;
+}
+.icon_countOuer .count_classify{
+    float: left;
+    width: 8rem;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -0.3rem;
+    margin-bottom: .4rem;
+  }
+.icon_countOuer .count_classify .countSpan{
+  color: #000;
+  font-size: .32rem;
+  flex-basis: 33.3%;
+  display: flex;
+  align-items: center;
+  
+}
+.icon_countOuer .count_classify .countSpan i{
+  width: .373333rem;
+  height: .373333rem;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 0.1rem;
+}
+.icon_countOuer .count_classify .friends i{
+  background: #fecc1e;
+  vertical-align: middle;
+}
+.icon_countOuer .count_classify .share1 i{
+  background: #4fa7f9;
+  vertical-align: middle;
+}
+.icon_countOuer .count_classify .sign i{
+  background: #8768f6;
+  vertical-align: middle;
+}
+.icon_countOuer .count_classify .click i{
+  background: #fb6e97;
+  vertical-align: middle;
+}
+.icon_countOuer .count_classify .other i{
+  background: #1dd0bc;
+  vertical-align: middle;
+}
+.icon_countOuer .count_classify .buy i{
+  background: #f55f0d;
+  vertical-align: middle;
+}
+.icon_countOuer .manage{
+  float: left;
+  width: 8rem;
+  height: .933333rem;
+  background-color: #ffe3dd;
+  border-radius: .466667rem;
+  border: solid 1px #ff7457;
+  color: #fa4822;
+  font-size: .453333rem;
+  line-height: .933333rem;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent;
+}
+.myFriends{
+  background: #fff;
+  color: #666;
+  font-size: .373333rem;
+  padding-left: .266667rem;
+  padding-right: .266667rem;
+  padding-bottom: .5rem;
+  -webkit-tap-highlight-color: transparent;
+
+}
+.myFriends .friends_title{
+  height: 1.066667rem;
+  border-bottom: 1px solid #F8F8F8;
+  margin-left: 0;
+  line-height: 1.066667rem;
+  -webkit-tap-highlight-color: transparent;
+}
+.myFriends .friends_title .all_friends i{
+  display: inline-block;
+  background: url('../../images/view/right.png') no-repeat;
+  background-size: 100% 100%;
+  width: .213333rem;
+  height: .373333rem;
+  vertical-align: middle;
+}
+.myFriends .all_friendsP{
+  font-size: .346667rem;
+  margin-bottom: 0.3rem;
+  margin-top: 0.2rem;
+}
+.myFriends .friends_ul{
+  margin-bottom: .4rem;
+  height: 13% !important;
+}
+.myFriends .friends_ul li{
+  width: 1.306667rem;
+  text-align: center;
+  margin-right: .88rem;
+  position: relative;
+  height: 2.2rem;
+}
+.myFriends .friends_ul li span{
+  font-size: .32rem;
+  width: 1.306667rem;
+  color: #999;
+  display: block;
+  margin-bottom: .18rem;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.myFriends .friends_ul li .head{
+  width: 1.2rem;
+  height: 1.2rem;
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  top: 0.05rem;
+  z-index: 99;
+}
+.myFriends .friends_ul li .headDefault{
+  width: 1.306667rem;
+  height: 1.453333rem;
+  position: absolute;
+  z-index: 98;
+  display: flex;
+  justify-content: center;
+}
+.myFriends .friends_ul li .head_word{
+  color: #333;
+}
+.myFriends .friends_ul li .head_Bg{
+  background: url('../../images/view/headImg.png') no-repeat;
+  background-size: 100% 100%;
+}
+.myFriends .friends_ul ::-webkit-scrollbar {
+  display: none;
+}
+.myFriends .friends_content{
+  width: 9.333333rem;
+  height: 2.266667rem;
+  background: #f2f2f2;
+  border-radius: .133333rem;
+  padding: .266667rem;
+
+}
+.myFriends .friends_content img{
+  width: 1.6rem;
+  height: 1.6rem;
+  border-radius: 50%;
+  display: inline-block;
+  float: right;
+}
+.myFriends .friends_content .content_left{
+  float: left;
+  width: 6.066667rem;
+}
+.myFriends .friends_content .content_left  .leftTitle{
+  margin-bottom: 0;
+  font-size: .373333rem;
+  color: #333;
+}
+.myFriends .friends_content .content_left .leftDetails{
+  width: 6.4rem;
+  font-size: .32rem;
+  color: #666;
+}
+.myFriends .myFriends_blank{
+  height: 4.48rem;
+}
+.myFriends .myFriends_blank img{
+  height: 2.106667rem;
+  width: 4.293333rem;
+  display: block;
+  margin: 0 auto;
+}
+.myFriends .myFriends_blank p{
+  font-size: .32rem;
+  color: #999;
+  text-align: center;
+  margin-top: .4rem;
+  margin-bottom: .4rem;
+}
+.myFriends .myFriends_blank .myFriends_button{
+  width: 8rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+.myFriends .myFriends_blank .myFriends_button span{
+  width: 3.8rem;
+  height: .933333rem;
+  background:#ffe3dd;
+  border-radius: .466667rem;
+  border: 1px solid #ff7457;
+  line-height: .93333rem;
+  font-size: .453333rem;
+  color: #fa4822;
+}
+/* 底部导航 */
+.footNav{
+  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 1.306667rem;
+  bottom: 0;
+  width: 100%;
+  font-size: 0.32rem;
+  z-index: 100000;
+  background: #fff;
+  text-align: center;
+  border-top: 1px solid #eee;
+}
+.footNav .footNav_home{
+  width: .56rem;
+  height: .48rem;
+  display: block;
+  margin: 0 auto;
+}
+.footNav .footNav_welfalre{
+  width: .466667rem;
+  height: .466667rem;
+  display: block;
+  margin: 0 auto;
+}
+.footNav .footNav_friends{
+  width: .48rem;
+  height: .48rem;
+  display: block;
+  margin: 0 auto;
+}
+.footNav .footNav_order{
+  width: .48rem;
+  height: .48rem;
+  display: block;
+  margin: 0 auto;
+}
+.footNav .footNav_mine{
+  width: .48rem;
+  height: .48rem;
+  display: block;
+  margin: 0 auto;
+}
+.black_gray {
+  height: 8px;
+  background: #F2F2F2;
+}
+.footNav .active{
+  color: #fb6e79;
+}
+.footGray{
+  height: 1.8rem;
+}

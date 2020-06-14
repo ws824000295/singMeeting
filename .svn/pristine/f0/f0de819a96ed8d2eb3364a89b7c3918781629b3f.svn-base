@@ -1,0 +1,462 @@
+.xx_tab {
+	height: 1.28rem;
+	background: #fff;
+	width: 100%;
+	background: url(../../../images/fuli/x.png) no-repeat center center #fff;
+	background-size: 0.18em 1rem;
+}
+
+.xx_tab p span {
+	display: block;
+	float: left;
+	width: 50%;
+	text-align: center;
+	line-height: 1.28rem;
+	font-size: 0.33rem;
+}
+
+.xx_tab p:nth-child(1) span {
+	background: url(../../../images/fuli/xx_01.png) no-repeat center;
+	background-size: 0.4rem 0.48rem;
+	background-position-x: 1.6rem;
+}
+
+.xx_tab p:nth-child(1) .sed {
+	background: url(../../../images/fuli/xx_01sed.png) no-repeat center;
+	background-size: 0.4rem 0.48rem;
+	background-position-x: 1.6rem;
+	color: #f75223;
+	border-bottom: 0.08rem solid #f75223;
+}
+
+.xx_tab p:nth-child(2) span {
+	background: url(../../../images/fuli/xx_02.png) no-repeat center;
+	background-size: 0.4rem 0.48rem;
+	background-position-x: 1.6rem;
+	color: #666666;
+}
+
+.xx_tab p:nth-child(2) .sed {
+	background: url(../../../images/fuli/xx_02sed.png) no-repeat center;
+	background-size: 0.4rem 0.48rem;
+	background-position-x: 1.6rem;
+	color: #f75223;
+	border-bottom: 0.08rem solid #f75223;
+}
+
+.wod_xxbox>div {
+	display: none;
+}
+
+.xxflcount {
+	padding: 0.46rem;
+}
+
+.xxflcountlist {
+	height: 6rem;
+	padding: 0.2rem;
+	background: #fff;
+	border-radius: 0.12rem;
+	margin-top: 0.3rem;
+	box-shadow: 0 0 0.1rem #ccc;
+}
+
+.xxflcountlist .top {
+	height: 0.8rem;
+	line-break: 0.8rem;
+}
+
+.xxflcountlist .top span:nth-child(1) {
+	font-size: 0.32rem;
+	color: #f34041;
+}
+
+.xxflcountlist .top span:nth-child(1) img {
+	width: 0.4rem;
+	padding-right: 0.1rem;
+}
+
+.xxflcountlist .top span:nth-child(2) {
+	font-size: 0.32rem;
+	color: #666;
+	float: right;
+}
+
+.xx_img {
+	display: block;
+	width: 100%;
+	height: 4rem;
+}
+
+.xxflcountlist .bottom {
+	height: 1.06rem;
+	line-height: 1.06rem;
+}
+
+.xxflcountlist .bottom span:nth-child(1) {
+	font-size: 0.37rem;
+	font-weight: 500;
+	color: #333;
+}
+
+.xxflcountlist .bottom span:nth-child(2) img {
+	width: 0.3rem;
+	padding-left: 0.1rem;
+}
+
+.xxflcountlist .bottom span:nth-child(2) {
+	font-size: 0.32rem;
+	color: #f75223;
+	float: right;
+}
+
+.xxtzcount {
+	padding: 0.46rem;
+}
+
+.xxtzlist {
+	padding: 0.2rem;
+	height: 6.93rem;
+	background: #fff;
+	border-radius: 0.12rem;
+	margin-top: 0.3rem;
+	box-shadow: 0 0 0.1rem #ccc;
+}
+
+.xxtzlist h6 {
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	font-size: 0.35rem;
+	font-weight: 500;
+	color: #f75223;
+	border-bottom: 0.03rem dashed #e6e6e6;
+}
+
+.xxtzlist h6 img {
+	width: 0.5rem;
+	padding-right: 0.1rem;
+}
+
+.xxtzlist p {
+	text-align: center;
+}
+
+.xxtzlist .p1 {
+	color: #666666;
+	font-size: 0.32rem;
+	margin-top: 0.2rem;
+}
+
+.xxtzlist .p2 {
+	color: #f75223;
+	font-size: 1.28rem;
+}
+
+.xxtzlist .p3 {
+	color: #999;
+	font-size: 0.32rem;
+}
+
+.xxtzlist .p4 {
+	width: 0.74rem;
+	height: 0.03rem;
+	background: #ccc;
+	margin: 0.2rem auto;
+}
+
+.xxtzlist .ps_5 div {
+	float: left;
+	width: 50%;
+}
+
+.xxtzlist .ps_5 div p:nth-child(1) {
+	color: #666;
+}
+
+.xxtzlist .ps_5 div p:nth-child(2) {
+	color: #999;
+}
+
+.xxtzlist .ps_6 img {
+	display: block;
+	width: 4rem;
+	float: left;
+	margin-left: 0.2rem;
+	margin-top: 0.2rem;
+}
+
+.rw_bg {
+	background: url(../../../images/fuli/rw_bg.png) no-repeat;
+	height: 28.77rem;
+}
+
+.rwnum {
+	width: 80%;
+	text-align: center;
+	margin: auto;
+	margin-top: 4.16rem;
+	color: #e65c13;
+	font-size: 0.32rem;
+	height: 3rem;
+	margin-bottom: 2.63rem
+}
+
+.rwnum p:nth-child(1) {
+	font-size: 1.48rem;
+	font-weight: 500;
+}
+
+.rwnum p:nth-child(1) span {
+	font-size: 0.4rem;
+	font-weight: 500;
+}
+
+.rwu_list {
+	padding: 0.2rem;
+}
+
+.rwu_list li {
+	width: 9.64rem;
+	height: 2.77rem;
+	background: url(../../../images/fuli/Background.png) no-repeat;
+	background-size: 100% 100%;
+	padding: 0.3rem;
+	margin-top: 0.2rem;
+}
+
+.rwu_list li .zrw_icon {
+	display: block;
+	float: left;
+	width: 1.46rem;
+	margin-top: 0.15rem;
+	margin-left: 0.2rem;
+}
+
+.rwu_list li div {
+	width: 4.1rem;
+	float: left;
+	margin-top: 0.1rem;
+	margin-left: 0.3rem;
+}
+
+.rwu_list li div p:nth-child(1) {
+	font-size: 0.42rem;
+	color: #505050;
+}
+
+.rwu_list li div p:nth-child(2) {
+	font-size: 0.32rem;
+	color: #e65c13;
+}
+
+.rwu_list li .zrw_zt {
+	display: block;
+	float: left;
+	width: 2.4rem;
+	margin-top: 0.4rem;
+	margin-left: 0.2rem;
+}
+
+.fuqun_list {
+	padding: 0.2rem;
+	width: 95%;
+	margin: 0.2rem auto;
+	border-radius: 0.15rem;
+	box-shadow: 0 0 0.1rem #ccc;
+}
+
+.fuqun_list div {
+	float: left;
+}
+
+.view .fuqun_list:nth-child(1n) div:nth-child(1) {
+	background: url(../../../images/fuli/fq3.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.view .fuqun_list:nth-child(2n) div:nth-child(1) {
+	background: url(../../../images/fuli/fq2.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.view .fuqun_list:nth-child(3n) div:nth-child(1) {
+	background: url(../../../images/fuli/fq1.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.view .fuqun_list:nth-child(4n) div:nth-child(1) {
+	background: url(../../../images/fuli/fq4.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.fuqun_list div:nth-child(1) {
+	width: 1.06rem;
+	height: 1.06rem;
+	text-align: center;
+	line-height: 1.06rem;
+	color: #fff;
+	font-size: 0.37rem;
+}
+
+.fuqun_list div:nth-child(2) {
+	width: 5.2rem;
+	margin-left: 0.3rem;
+	color: #666;
+}
+
+.fuqun_list div:nth-child(2) p:nth-child(1) {
+	font-size: 0.38rem;
+	color: #333;
+	font-weight: 500;
+}
+
+.fuqun_list div:nth-child(2) p:nth-child(2) {
+	font-size: 0.26rem;
+	margin-top: 0.1rem;
+	color: #a9a9a9;
+}
+
+.fuqun_list div:nth-child(2) p:nth-child(2) img {
+	width: 0.3rem;
+	padding-right: 0.1rem;
+}
+
+.fuqun_list div:nth-child(3) {
+	color: #666;
+	float: right;
+	margin-right: 0.3rem;
+}
+
+.fuqun_list div:nth-child(3) img {
+	width: 0.35rem;
+}
+
+.add_fq {
+	width: 100%;
+	position: fixed;
+	bottom: 0rem;
+	height: 1.8rem;
+	background: #fff;
+}
+
+.add_fq img {
+	display: block;
+	margin: 0.35rem auto;
+	width: 8.8rem;
+}
+
+.addfq_list {
+	padding: 0.3rem 0.4rem;
+	background: #fff;
+	margin-top: 0.37rem;
+}
+
+.addfq_list p {
+	float: left;
+}
+
+.addfq_list .img {
+	float: left;
+	width: 0.8rem;
+}
+
+.addfq_list p:nth-child(2) {
+	width: 1.8rem;
+	margin-left: 0.3rem;
+	font-size: 0.34rem;
+	line-height: 0.8rem;
+}
+
+.addfq_list p:nth-child(3) input[type=text] {
+	width: 6.2rem;
+	height: 0.8rem;
+	border: 1px solid #ccc;
+	border-radius: 0.06rem;
+}
+
+.select {
+	-webkit-appearance: none;
+	appearance: none;
+	border: none;
+	display: block;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	background-color: #FFFFFF;
+	color: #666;
+	border-radius: 0.05rem;
+	font-size: 0.32rem;
+	float: right;
+	position: relative;
+	top: 0.02rem;
+	width: 4rem;
+	text-align: center;
+	direction: rtl;
+}
+.addfq_list  .right{
+	float: right;
+	line-height: 0.8rem;
+}
+.addfq_list  .right .img{
+	width: 0.21rem;
+	float: right;
+	margin-top: 0.22rem;
+}
+.goshopping{
+	color: #f75223;
+	text-align: right;
+	font-size: 0.35rem;
+	line-height: 0.8rem;
+	padding: 0.2rem;
+}
+.fq_biaoq{
+	background: #fff;
+	padding-left: 0.14rem;
+	padding-bottom: 0.3rem;
+}
+.fq_biaoq li{
+	float: left;
+	width: 1.86rem;
+	height: 0.53rem;
+	line-height: 0.53rem;
+	text-align: center;
+	line-height: 0.53rem;
+	border: 0.02px solid #999999;
+	margin: 0.1rem 0.28rem;
+	border-radius:0.09rem ;
+	font-size: 0.32rem;
+	color: #999999;
+}
+.fq_biaoq .sed{
+	color: #fff;
+	background: url(../../../images/fuli/fq_biaoqbg.png) no-repeat;
+	background-size:100% 100% ;
+}
+.bt_btm{
+	border-bottom: 0.01rem solid #f2f2f2;
+	margin-left: 2rem;
+}
+.add_fqsavr{
+	height: 1.33rem;
+	width: 100%;
+	background: #f75223;
+	color: #fff;
+	font-size: 0.42rem;
+	text-align: center;
+	line-height: 1.33rem;
+	position: absolute;
+	bottom: 0;
+}
+.list_no{
+	margin: 0;
+	padding: 0;
+	height: 1.4rem;
+	padding-right: 0.4rem;
+}
+.list_no div{
+	border-top: 0.01rem solid #ccc;
+	margin-left: 1rem;
+}
+.list_no div p{
+	margin-top: 0.3rem;
+}

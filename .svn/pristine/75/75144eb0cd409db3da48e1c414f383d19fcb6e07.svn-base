@@ -1,0 +1,535 @@
+				*{
+					-webkit-box-sizing: border-box;
+					   -moz-box-sizing: border-box;
+					        box-sizing: border-box;
+				}
+				body{
+					background:#f5f5f5;
+				}
+				.me_none {
+					width: 6rem;
+					background: url(../../../images/fuli/xin01.png) no-repeat center;
+					background-size: 2.77rem 2.77rem;
+					margin: 2rem auto;
+					text-align: center;
+					color: #999999;
+					padding-top: 2.8rem;
+					font-size: 0.28rem;
+					height: 1.9rem;
+				}
+				.me_xingtopmsg{
+					height:0.8rem ;
+					width: 100%;
+					overflow: hidden;
+					text-align: center;
+					background: #fef3dd;
+					color: #333;
+					position: fixed;
+					top: 0;
+					line-height: 0.8rem;
+					z-index:9;
+				}
+				.me_xingtopmsg li{
+					height: 0.8rem;
+					font-size: 0.32rem;
+				}
+				.me_xingtopmsg li img{
+					width: 0.5rem;
+				}
+				.me_ximgbanner{
+					height: auto;
+					width: 100%;
+					background: url(../../../images/fuli/me_ximgbanner-gai2.png) no-repeat;
+					background-size:100% 100% ;
+					overflow: hidden;
+				}
+				.me_ximgbanner .mx_alink{
+					width: 5.06rem;
+					height: 1.06rem;
+					display: block;
+					margin-top:4.8rem ;
+					margin-left:2.7rem ;
+					margin-bottom: 0.24rem;
+					z-index: 0;
+				}
+				.me_ximgfubi{
+					height: 1.06rem;
+					background: #8b270a;
+				}
+				.me_ximgfubi p{
+					float: left;
+					width: 33%;
+					text-align: center;
+					color: #fff;
+					padding-top: .1rem;
+					background: url(../../../images/fuli/me_xian.png) center  right no-repeat;
+					background-size:0.05rem 0.72rem ;
+					background-position-y:0.23rem ;
+				}.me_ximgfubi p:last-child{
+					background: none;
+				}
+				.me_ximgfubi p span{
+					display: block;
+					font-size: 0.25rem;
+
+				}
+				.me_ximgfubi p span:nth-child(1){
+					font-weight: bold;
+					font-size: 0.3rem;
+					padding-top: 0.1rem;
+				}
+				.me_ximgfubi_et{
+					height: 1.06rem;
+					background: #31cd6c;
+				}
+				.me_ximgfubi_et p{
+					float: left;
+					width: 33%;
+					text-align: center;
+					color: #fff;
+					padding-top: .1rem;
+					background: url(../../../images/fuli/me_xian.png) center  right no-repeat;
+					background-size:0.05rem 0.72rem ;
+					background-position-y:0.23rem ;
+				}.me_ximgfubi_et p:last-child{
+					background: none;
+				}
+				.me_ximgfubi_et p span{
+					display: block;
+					font-size: 0.25rem;
+
+				}
+				.me_ximgfubi_et p span:nth-child(1){
+					font-weight: bold;
+					font-size: 0.3rem;
+					padding-top: 0.1rem;
+				}
+				.me_yaoqingbtn{
+					border:0;
+					position: fixed;
+					width: 2.02rem;
+					right: 0;
+					top: 1.25rem;
+				}
+				.me_rewardbtn{
+					position: fixed;
+					width: 2.02rem;
+					left: 0;
+					top: 1.25rem;
+				}
+				/*左右抖动*/
+				.mx_alink{
+					animation: zX 1.5s infinite;
+				}
+				@-webkit-keyframes zX {
+					10% {
+						transform: scale(0.94);
+					}
+					20% {
+						transform: scale(1);
+					}
+					30% {
+						transform: scale(0.94);
+					}
+					40% {
+						transform: scale(1);
+					}
+					50%,
+					100% {
+						transform: scale(0.94);
+					}
+				}
+				.mx_awaken{
+					position: fixed;
+					top: 48%;
+					right: 0;
+					width: .65rem;
+				}
+				.me_xingtab_div{
+					background:#f5f5f5;
+				}
+				.me_xingtab_header{
+					width: 100%;
+					height: 1.2rem;
+					line-height: 1.2rem;
+					text-align: center;
+					background:#fff;
+				}
+				.me_xingtab_header li{
+					width: 50%;
+					float: left;
+					color: #f75223;
+					font-size:.3rem;
+					font-weight:bold;
+				}
+				.me_xingtab_header li.active span{
+					display: inline-block;
+					width: 33%;
+					border-bottom:3px solid #f75223;
+				}
+				.me_xingtab_content{
+					width: 100%;
+				    clear: both;
+				    height: auto;
+				    overflow: hidden;
+				    padding: 0.1rem .4rem 0.12rem .28rem;
+				    background: #f5f5f5;
+				}
+				.me_xingtab_item{
+					width: 48%;
+				    height: auto;
+				    overflow: hidden;
+				    float: left;
+				    text-align: center;
+				    padding: .2rem;
+				    margin-left: 0.12rem;
+				    background: #fff;
+				    border-radius: 4px;
+				    margin-bottom: .1rem;
+				}
+				.me_xingtab_item .thumb-box{
+					width: 2rem;
+					height: 2.28rem;
+					background:url('../../../images/fuli/crown.png') no-repeat center;
+					background-size:100%;
+					text-align: center;
+				    line-height: 2.55rem;
+				    margin: 0 auto;
+				}
+				.thumb-box img{
+					width: 93%;
+				    height: 80%;
+				    object-fit: cover;
+				    border-radius: 50%;
+				    vertical-align: middle;
+				}
+				.user-name{
+					font-size:.35rem;
+					color: #333;
+					margin-top: .3rem;
+				}
+				.gain{
+					font-size:.28rem;
+					color: #666;
+					margin-top: .2rem;
+				}
+				.mx_date{
+					font-size:.25rem;
+					color: #999;
+					margin-top: .2rem;
+				}
+					/* 福星新弹框 */
+				.btnbox{
+					margin-top: .29rem;
+					padding-top: 0.18rem;
+					border-top:2px solid #f2f2f2;
+				}
+				.remind{
+					-webkit-appearance: none;
+				    background: #fff;
+				    border: 2px solid #f8623e;
+				    color: #f8623e;
+				    border-radius: 8px;
+				    width: 60%;
+					font-size:.28rem;
+					padding: .1rem 0;
+				}
+				.awaken_alert_mask{
+					width: 100vw;
+					height: 100vh;
+					position: fixed;
+					top: 0;
+					left: 0;
+					bottom:0;
+					right:0;
+					background:rgba(0,0,0,0.6);
+					z-index: 99;
+					display: none;
+				}
+				.awaken_alert_tips{
+					width: 100%;
+					height: auto;
+					overflow: hidden;
+					background:#f7f7f7;
+					padding: 1.08rem .5rem 1rem;
+					color: #9e9e9e;
+					font-size:.35rem;
+					line-height: .75rem;
+					margin: .14rem 0.2rem;
+				}
+				.awaken_alert{
+					position: fixed;
+					width: 90.5%;
+					height: 12.76rem;
+					top: 50%;
+					margin-top: -6.38rem;
+					z-index: 10;
+					background:#fff;
+					left: 50%;
+					margin-left: -45%;
+					border-radius:.2rem;
+					padding: .5rem;
+				}
+				.awaken_title{
+					width: 5.62rem;
+					height: 1.2rem;
+					position: absolute;
+					background:url('../../../images/fuli/awake.png') no-repeat center;
+					background-size:100%;
+					left: 50%;
+				    margin-left: -2.81rem;
+				    top: -0.26rem;
+				    color: #fff;
+				}
+				.awaken_title_et{
+					width: 5.62rem;
+					height: 1.2rem;
+					position: absolute;
+					background:url('../../../images/fuli/awake_et.png') no-repeat center;
+					background-size:100%;
+					left: 50%;
+				    margin-left: -2.81rem;
+				    top: -0.26rem;
+				    color: #fff;
+				}
+				.awaken_close{
+					width: .47rem;
+					height: .47rem;
+					background:url('../../../images/fuli/close.jpg') no-repeat center;
+					background-size:100%;
+					position: absolute;
+				    top: .24rem;
+				    right: .45rem;
+				}
+				.awaken_alert_content{
+					margin-top: 1rem;
+					font-size:.5rem;
+					color: #464646;
+					letter-spacing:1px;
+				}
+				.awaken_alert_content span{
+					color: #f75223;
+				}
+				.partakebtn{
+					-webkit-appearance: none;
+				    background: #f75223;
+				    border: none;
+				    color: #fff;
+			        width: 84%;
+				    height: 1.1rem;
+				    line-height: 1.1rem;
+				    border-radius: .5rem;
+				    position: absolute;
+				    left: 50%;
+				    margin-left: -42%;
+				}
+				.pointToAkw{
+					position:fixed;
+					top:0;
+					left:0;
+					right:0;
+					bottom:0;
+					z-index:99;
+				}
+				.wx_zhiyin{
+					width: 8.49rem;
+					margin-left: 1.5rem;
+					display: block;
+					margin-top:-1rem;
+				}
+				.wx_zhiyinido{
+					width: 2.93rem;
+					display: block;
+					margin: 1.33rem auto;
+				}
+				.name_star{
+					display: inline-block;
+					width: .3rem;
+					height: .35rem;
+					background: url('../../../images/fuli/star.gif') no-repeat center;
+					background-size: 100% 100%;
+					margin-left: 0.08rem;
+					vertical-align: middle;
+				}	
+			.fans-alert{
+				width: 100vw;
+				height: 100vh;
+				background: rgba(0,0,0,0.6);
+				position: fixed;
+				z-index: 999;
+			}
+			.fans-alert-content{
+				width: 7.96rem;
+				height: 12.76rem;
+				margin: 0 auto;
+				margin-top: .67rem;
+				position: relative;
+			}
+			.fans-close{
+				display: block;
+				width: .63rem;
+				height: .63rem;
+				background: url('../../../images/fuli/fans-close.png') no-repeat center;
+				background-size: 100%;
+				position: absolute;
+				top: 0;
+				right: 0;
+			}
+			.fans-head{
+				width: 7.85rem;
+				height: 5.373rem;
+				background: url('../../../images/fuli/fans-head.png') no-repeat center;
+				background-size: 100%;
+				margin: 0 auto;
+				z-index: 999;
+			}
+			.fans-head_et{
+				width: 7.85rem;
+				height: 5.373rem;
+				background: url('../../../images/fuli/fans-head_et.png') no-repeat center;
+				background-size: 100%;
+				margin: 0 auto;
+				z-index: 999;
+			}
+			.fans-body{
+				width: 7.2rem;
+    			height: 7.3rem;				
+				background: url('../../../images/fuli/fans-body.png') no-repeat center;
+				background-size: 100%;
+				margin: 0 auto;
+				padding-top: .53rem;
+				margin-top: -2px;
+				text-align: center;
+			}
+			.fans-count{
+				font-size: .35rem;
+				color: #000000;
+				text-align: center;
+			}
+			
+			.fans-count span{
+				color: #ef2519;
+			}
+			.seize{
+				display: inline-block;
+				width: 0.28rem;
+			}
+			.fans-sum{
+			    margin-top: .1rem;
+				font-size: .48rem;
+				color: #ef2519;
+			}
+			.fans-tips{
+				padding: 0 .4rem;
+				font-size: 0.28rem;
+				color: #626261;
+				margin-top: 0.16rem;
+			}
+			.develop,.awake-fans{
+				display: block;
+				width: 5.93rem;
+				height: 1.22rem;
+				color: #fff;
+				margin: 0 auto;
+				text-align: center;
+				line-height: 1.22rem;
+				font-size: .56rem;
+				margin-top: .4rem;
+			}
+			.develop{
+				background: url('../../../images/fuli/develop.png') no-repeat center;
+				background-size: 100%;				
+			}
+			.awake-fans{
+				background: url('../../../images/fuli/alertawake.png') no-repeat center;
+				background-size: 100%;				
+			}
+			
+			
+		/* 	新弹框 */
+			.what-alert{
+				width: 100vw;
+				height: 100vh;
+				background: rgba(0,0,0,0.6);
+				position: fixed;
+				z-index: 9999;
+			}
+			.what-alert-content{
+				width: 7.73rem;
+				height: 9.87rem;
+				margin: 0 auto;
+				margin-top: 1.72rem;
+				position: relative;
+				border-radius: .25rem;
+			}
+			.what-close{
+				display: block;
+				width: .93rem;
+				height: .93rem;
+				background: url('../../../images/fuli/what-close.png') no-repeat center;
+				background-size: 100%;
+				position: absolute;
+				top: -.3rem;
+				right: -.3rem;
+			}
+			.what-head{
+				width: 7.73rem;
+				height: 5.82rem;
+				background: url('../../../images/fuli/what-banner.png') no-repeat center;
+				background-size: 100%;
+				margin: 0 auto;
+				z-index: 999;
+				margin-top: 3rem;
+			}
+			.what-body{
+				width: 7.73rem;	
+				height: 4.04rem;	
+				background: #fff;
+				margin: 0 auto;
+				margin-top: -1px;
+				text-align: center;
+				border-radius: 0 0 .2rem .2rem;
+			}
+			.what-count{
+				font-size: .37rem;
+				color: #000000;
+				text-align: center;
+				font-weight:600;
+				margin-bottom: .2rem;
+			}
+			.what-count span{
+				color: #f0652f;
+			}
+			.what-title{
+				font-size: .35rem;
+				color: #000;
+				line-height: .58rem;
+    			padding: 0 .5rem;
+    			margin-top: .1rem;
+			}
+			.awake-what{
+				width: 100%;
+				height: 1.04rem;
+				background: url('../../../images/fuli/awake-what.png') no-repeat center;
+				background-size: 100%;	
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;			
+			}
+			.awake-what_et{
+				width: 100%;
+				height: 1.04rem;
+				background: url('../../../images/fuli/awake-what_et.png') no-repeat center;
+				background-size: 100%;	
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				right: 0;			
+			}
+.pointTitle{
+	    color: white;
+	    text-align: center;
+    	font-size: 0.38rem;
+    	margin-top: -1rem;	
+}

@@ -1,0 +1,30 @@
+@charset "utf-8";
+/*=============================消息提示 =========================*/
+.alert {
+	margin-bottom: 20px;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	text-align: center;
+	width: 300px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	position: absolute;
+	-webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	box-shadow: 0 5px 15px rgba(0, 0, 0, .5);
+	z-index: 10001;
+	background-color: #3dc9b3;
+	top: 300px;
+	left: 50%;
+	margin-left: -150px;
+	color: #fff;
+	font-size: 16px;
+	display: none;
+}
+
+.close_btn {
+	color: #fff !important;
+	font-size: 20px;
+	position: absolute;
+	right: 5px;
+	top: -9px;
+}

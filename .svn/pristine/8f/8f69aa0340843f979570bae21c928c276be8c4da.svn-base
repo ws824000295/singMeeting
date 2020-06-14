@@ -1,0 +1,79 @@
+﻿/** 
+ 
+ @Name: layer皮肤--seaning
+ @Date: 2015.04.19
+ @Author: 隐
+ @blog: seaning.com
+ @remark:
+    1.新增flat风格图标，替换layer默认图标，新图标大小为48px;
+    2.更改按钮位置，右对齐
+    3.添加title的底部border
+
+**/
+
+html #layui_layer_skinseaningstylecss{display:none; position: absolute; width:1989px;}
+
+body .layer-ext-seaning .layui-layer-title{background:#70A8E5; color:#000; border: 1px #e7e7e7 solid;}
+body .layer-ext-seaning .layui-layer-content .layui-layer-ico{width:48px; height:48px;}
+
+body .layer-ext-seaning .layui-layer-ico0{background:url(default.png) no-repeat 0 0;}
+body .layer-ext-seaning .layui-layer-ico1{background:url(default.png) no-repeat -48px 0;}
+body .layer-ext-seaning .layui-layer-ico2{background:url(default.png) no-repeat -96px 0;}
+body .layer-ext-seaning .layui-layer-ico3{background:url(default.png) no-repeat -144px 0;}
+body .layer-ext-seaning .layui-layer-ico4{background:url(default.png) no-repeat -192px 0;}
+body .layer-ext-seaning .layui-layer-ico5{background:url(default.png) no-repeat -240px 0;}
+body .layer-ext-seaning .layui-layer-ico6{background:url(default.png) no-repeat -288px 0;}
+body .layer-ext-seaning .layui-layer-ico7{background:url(default.png) no-repeat -336px 0;}
+body .layer-ext-seaning .layui-layer-ico8{background:url(default.png) no-repeat -384px 0;}
+body .layer-ext-seaning .layui-layer-ico9{background:url(default.png) no-repeat -432px 0;}
+body .layer-ext-seaning .layui-layer-ico10{background:url(default.png) no-repeat -480px 0;}
+body .layer-ext-seaning .layui-layer-ico11{background:url(default.png) no-repeat -528px 0;}
+body .layer-ext-seaning .layui-layer-ico12{background:url(default.png) no-repeat -576px 0;}
+body .layer-ext-seaning .layui-layer-ico13{background:url(default.png) no-repeat -624px 0;}
+body .layer-ext-seaning .layui-layer-setwin .layui-layer-close1 {width: 14px; height: 14px;}
+body .layer-ext-seaning .layui-layer-padding{padding-top:28px;padding-left:74px;padding-bottom: 30px;}
+body .layer-ext-seaning .layui-layer-btn{padding:0 60px 20px;}
+body .layer-ext-seaning .layui-layer-title{
+	border-bottom: 1px solid #70A8E5;
+    border-radius: 5px;
+    color: #fff;
+    font-family: "Microsoft YaHei","微软雅黑","SimHei","黑体";
+    font-size: 14px;
+    font-weight: bold;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 0 0 10px;
+}
+body .layer-ext-seaning .layui-layer-btn .layui-layer-btn0{
+	background: none repeat scroll 0 0 #70A8E5;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 25px;
+}
+body .layer-ext-seaning .layui-layer-btn .layui-layer-btn1{
+	background: none repeat scroll 0 0 #bbb;
+    border-radius: 4px;
+    font-size: 13px;
+    height: 36px;
+    line-height: 36px;
+    padding: 0 25px;
+}
+body .layer-ext-seaning .layui-layer-close {
+  background: url(close.png);
+  width: 14px;
+  height: 14px;
+  top: 8px;
+  -webkit-transition: all 0.3s ease 0s;
+          transition: all 0.3s ease 0s;
+  right: 10px;
+}
+body .layer-ext-seaning .layui-layer-close:hover {
+  -webkit-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+          transform: rotate(360deg);
+  text-indent: 0;
+  text-decoration: none;
+  background-position: 0 0;
+}

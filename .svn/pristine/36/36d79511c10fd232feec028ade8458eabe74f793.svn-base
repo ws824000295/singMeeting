@@ -1,0 +1,55 @@
+.coin-set{
+	padding: 26px;
+}
+.set-left,.set-right{
+	width: 50%;
+	float: left;
+}
+.set-content{
+	width: 80%;
+	height: auto;
+	overflow: hidden;
+	border: 1px solid #e5e5e5;
+	margin-top: 22px;
+}
+.set-flex{
+	display: flex;
+	align-items: center;
+	text-align: center;
+	height: 44px;
+	border-bottom: 1px solid #e5e5e5;
+}
+.set-flex:first-child{
+	background: #c2d7ec;
+}
+.flex-left,.flex-right{
+	flex: 1;
+}
+.ratio,.ps{
+	margin-top: 45px;
+}
+.coin-set{
+	clear: both;
+}
+.eidt-btn{
+    -webkit-appearance: none;
+    display: block;
+    width: 140px;
+    height: 40px;
+    background: #ff6501;
+    line-height: 40px;
+    text-align: center;
+    color: #fff;
+    border: none;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.right-inp{
+	display: block;
+    width: 100%;
+    height: 100%;
+    border: none;
+    text-align: center;
+}

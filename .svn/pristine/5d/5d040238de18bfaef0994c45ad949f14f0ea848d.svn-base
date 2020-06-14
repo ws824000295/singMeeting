@@ -1,0 +1,500 @@
+body{
+  background: #f2f2f2;
+}
+.to_top {
+  background: url('../../images/view/top.png') no-repeat;
+  background-size: 100% 100%;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: fixed;
+  bottom: 1.533rem;
+  right: 0.2667rem;
+  display: none;
+  z-index: 6666;
+}
+.allgoods_top {
+  /* background: url('./icons/top.png') no-repeat; */
+  background-size: 100% 100%;
+  width: 0.8rem;
+  height: 0.8rem;
+  position: fixed;
+  bottom: 0.533rem;
+  right: 0.2667rem;
+  display: none;
+  z-index: 99;
+}
+.box {
+  width: 100%;
+  height: 1.0667rem;
+  margin-bottom: 0.2667rem;
+  background: white;
+  position: fixed;
+  top: 0;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: Center;
+}
+.box .searchImg {
+  /* background: url('./icons/search.png') no-repeat; */
+  background-size: 100% 100%;
+  width: 0.347rem;
+  height: 0.347rem;
+  position: absolute;
+  left: 3.6rem;
+  top: 0.4rem;
+  vertical-align: middle;
+
+}
+.box .search {
+  width: 9.4667rem;
+  height: 0.8rem;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  outline: none;
+  border: 0;
+  /* padding-left: 42%; */
+  text-align: start;
+}
+.box .search::-ms-input-placeholder {
+  text-align: center;
+}
+.box .search::-webkit-input-placeholder {
+  text-align: center;
+}
+.details {
+  position: relative;
+  position: fixed;
+  top: 1.333rem;
+  left: 0;
+  margin-top: 0, .26667rem;
+}
+.aside {
+      width: 2.213rem;
+    position: fixed;
+    top: 1.333rem;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    background: #fff;
+    overflow-y: scroll;
+    padding-top: 1.5rem;
+}
+.aside div {
+  width: 2.213rem;
+  height: 1.333rem;
+  background: white;
+  margin-bottom: 1px;
+  text-align: center;
+  line-height: 1.333rem;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+
+.aside div.a_cur {
+  background: #f2f2f2;
+  color: #fa6d19;
+  position: relative;
+  border-left: .06rem solid #FF533D;
+}
+.allGgoods{
+  position: absolute;
+  top: 1.333rem;
+  left: 2.35rem;
+  width: 7.4rem;
+  height: 2.293333rem;
+}
+.allGgoods .welfare_show{
+  padding: .266667rem;
+  height: 2.4rem;
+  display: flex;
+  align-items: center;
+  border: 1px solid #eee;
+  border-radius: .053333rem;
+  background: #fff;
+  margin-bottom: .133333rem;
+}
+.allGgoods .welfare_show img {
+  width: 2.72rem !important;
+  height: 1.733333rem;
+  border-radius: .053333rem;
+  /* margin-right: .32rem; */
+}
+.allGgoods .welfare_show .welfare_details{
+  width: 4.346667rem;
+  height: 1.733333rem;
+  font-size: .32rem;
+  padding-left: 0.267rem;
+  border-radius: .053333rem;
+}
+.allGgoods .welfare_show .welfare_details  .details_p{
+  width: 3.8rem;
+  font-size: .32rem;
+  /* display: -webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient: vertical; */
+  margin-bottom: .25rem;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+.allGgoods .welfare_show .welfare_details .welfare_local{
+  background: url('../../images/view/position.png') no-repeat;
+  background-size: 100% 100%;
+  width: .32rem;
+  height: .32rem;
+  display: inline-block;
+  vertical-align: sub;
+}
+.allGgoods .welfare_show .welfare_details .welfare_localName{
+  font-size: .293333rem;
+  color: #666666;
+  margin-left: 0.1rem;
+}
+.allGgoods .welfare_show .welfare_details .welfare_p2{
+  /* // margin-top 0.1rem; */
+  color: #ff1616;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 0.7rem;
+}
+.allGgoods .welfare_show .welfare_details .welfare_p2 .welfare_p2_Outer .welfare_sale{
+  font-size: .293333rem;
+}
+.allGgoods .welfare_show .welfare_details .welfare_p2 .welfare_p2_Outer .welfare_saleNum{
+  font-style: normal;
+  font-size: .40rem;
+  margin-right: 0.2rem;
+}
+.allGgoods .welfare_show .welfare_details .welfare_p2 .welfare_p2_Outer .welfare_price{
+  color: #666;
+  font-size: .24rem;
+
+}
+.allGgoods .welfare_show .welfare_details .welfare_p2 .welfare_p2_Outer .welfare_price .welfare_personNum{
+  font-style: normal;
+}
+  
+.allGgoods .welfare_show .welfare_details .welfare_p2 .welfare_span{
+  background-color: #ffffff;
+  border-radius: 2px;
+  border: solid 0.5px #fc4f69;
+  padding-left: 0.1rem;
+  font-size: .24rem;
+  padding-right: 0.1rem;
+  /* margin-bottom: 0.07rem; */
+}
+/* #allgoods {
+  width: 2.213rem;
+  height: 1.333rem;
+  background: white;
+  margin-bottom: 1px;
+  text-align: center;
+  line-height: 1.333rem;
+} */
+.blankOuter{
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 1.2rem;
+  position: fixed;
+  top: 20%;
+  left: 40%;
+
+}
+.blankOuter p{
+  font-size: .373333rem;
+  color: #666;
+}
+.blankOuter .blank{
+  background: url('../../images/view/blank.png') no-repeat;
+  width: 2.773333rem;
+  height: 2.773333rem;
+  background-size: 100% 100%;
+  margin: 0 auto;
+}
+/* 鎼滅储瀵艰埅 */
+#selected-address{
+  height: 1.066667rem;
+}
+#selected-address .lastarea{
+  font-size: .346667rem;
+  line-height: 1.066667rem;
+  height: 1.066667rem;
+}
+.dt_searchbox{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100200;
+  background: #ffffff;
+ /*  border: 1px solid #eee; */
+}
+.dt_search{
+  display: flex;
+  height: 1.066667rem;
+  align-items: center;
+  z-index: 100202;
+  position: relative;
+  background: #ffffff;
+  /* padding: 0 0.2rem 0 0.2rem; */
+   border-bottom: 1px solid #eeeeee;
+}
+.dt_search .welfare_sort{
+  position: absolute;
+  bottom: -3.01rem;
+  right: 0;
+  width: 100%;
+  background: #fff;
+  z-index:100202;
+}
+
+.dt_search .welfare_sort div{
+  border-bottom: 1px solid #eeeeee;
+  font-size: 0.3467rem;
+  height: 1rem;
+  color: #333;
+  line-height: 1rem;
+  width: 90%;
+  margin: 0 auto;
+ /*  padding: 0 0.267rem 0 0.267rem; */
+}
+.dt_search #areaLabel {
+  width: 2rem;
+  height: .533333rem;
+  font-size: .266667rem;
+  color: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dt_search #areaLabel #Addr {
+  text-align: center;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+/*   margin-left: -0.7rem; */
+  font-size: .346667rem;
+}
+.dt_search #areaLabel img{
+  width: .266667rem;
+  height: .2rem;
+  background-size: 100% 100%;
+}
+.dt_search input {
+  width: 6.666667rem;
+  height: .8rem;
+  border-radius: .053333rem;
+  outline: none;
+  border: 0;
+  background: #F3F3F3;
+  padding: 0.2rem;
+}
+.dt_search .classfiy{
+  width: 1.333333rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.dt_search .classfiy i{
+  width: .533333rem;
+  height: .44rem;
+  background: url('../../images/view/sort.png') no-repeat;
+  background-size: 100% 100%;
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+/* #areaLabel::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: calc(1em + .24rem / 2);
+  width: .24rem;
+  height: .24rem;
+  border-width: 1px;
+  border-style: solid solid none none;
+  border-color: #000;
+  transform: rotate(45deg) translateY(-50%);
+  transform-origin: center;
+} */
+#areaLabel span {
+  width: 1.066667rem;
+}
+#areaLabel input {
+  flex: 1;
+  border: none;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#addressSelectWrapper {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+#addressSelect {
+  z-index: 999;
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  overflow: hidden;
+  background-color: #fff;
+}
+#addressSelect .tip {
+  position: relative;
+  height: .533333rem;
+  line-height: .533333rem;
+  width: 100%;
+  border-bottom: 1px solid #dedede;
+}
+#addressSelect .tip h3 {
+  width: 100%;
+  height: .533333rem;
+  line-height: .533333rem;
+  text-align: center;
+  font-size: .213333rem;
+  font-weight: normal;
+  color: #666;
+}
+#addressSelect .tip #cancel {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: .52rem;
+  height: .52rem;
+  color: #666;
+  border: none;
+  background: transparent url("../static/city/css/images/cancel.png") no-repeat center;
+    cursor: pointer;
+}
+#addressSelect #address {
+  width: 100%;
+  height: 100%;
+}
+/*琚�変腑鐨勫湴鍧�*/
+.selected-address {
+  width: 100%;
+  height: .533333rem;
+  line-height: .533333rem;
+  border-bottom: 1px solid #ededed;
+}
+.selected-address:before {
+    content: "";
+    display: table;
+}
+.selected-address:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.selected-address li {
+    float: left;
+    height: .533333rem;
+    line-height: .52rem;
+    text-align: center;
+    width: 25%;
+    padding-right: .3em;
+    padding-left: .3em;
+    color: #333;
+    border-bottom: 1px solid transparent;
+    font-size: .173333rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+}
+.selected-address li.active {
+    border-bottom-color: #3da5fe;
+    color: #3da5fe;
+}
+/*鍚勭骇鍦板潃鍒楄〃*/
+.address-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    /*鍔犺浇涓�*/
+}
+.address-content ul {
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    padding-top: .106667rem;
+    padding-bottom: 1.173333rem;
+}
+.address-content ul li {
+  height: 1rem;
+  line-height: 1rem;
+  padding-left: 1em;
+  font-size: .346rem;
+  width: 100%;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #333;
+  cursor: pointer;
+}
+.address-content ul li.active {
+  background-color: #3da5ef;
+  color: #fff;
+}
+.address-content .loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: .186667rem .186667rem .186667rem .693333rem;
+  background: rgba(0, 0, 0, 0.5) url("../static/city/css/images/loading.gif") no-repeat left .186667rem center / .32rem .32rem;
+  color: #fff;
+  border-radius: .08rem;
+  font-size: .213333rem;
+}
+.blackOuter1{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  background: rgba(0,0,0,0.6);
+  z-index: 100001;
+}
+.cw_fx {
+    width: 7.2rem;
+    height: 8.92rem;
+    background: url(../../images/fuli/cw_fxbg.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 2.66rem auto;
+    position: relative;
+}
+.cw_fx .cw_fxido {
+    width: 4.1rem;
+    position: absolute;
+    bottom: 6%;
+    left: 20%;
+}
+.fl_xiangqing {
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0px;
+    bottom: 0;
+    z-index: 100203;
+}
+.cw_fx .cw_fxiclose {
+	width: 0.64rem;
+	position: absolute;
+	bottom: -14%;
+	left: 46%;
+}

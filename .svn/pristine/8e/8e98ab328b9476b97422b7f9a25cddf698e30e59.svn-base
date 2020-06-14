@@ -1,0 +1,107 @@
+.demo-box{
+	width: 100%;
+	overflow: hidden;
+	background: #EEF5FD;
+	border: 1px solid #E6E8EB;
+}
+/*******单独组件样式********/
+.calendar-box *{
+	box-sizing: border-box;
+}
+.ht-rili-head{
+	overflow: hidden;
+}
+.ht-rili-querybox{
+  overflow: hidden;
+  margin-bottom: 0.53rem;
+  margin-top: .4rem;
+}
+.ht-rili-title{
+	display: inline-block;
+	max-width: 5.3rem;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	overflow: hidden;
+  vertical-align: middle;
+  font-size: 0.45rem !important;
+  padding-left: 0.49rem;
+}
+.ht-rili-datebox{
+	display: inline-block;
+	vertical-align: middle;
+  padding: 0.13rem;
+  float: right;
+  padding-right: 0.67rem;
+}
+.ht-rili-date{
+	text-align: center;
+	display: inline-block;
+	width: 2.93rem !important;
+	height: 0.25rem;
+	line-height: 0.25rem;
+  vertical-align: middle;
+  font-size: 0.45rem !important;
+}
+.ht-rili-leftarr{
+	display: inline-block;
+	width:0.33rem;
+	height: 0.25rem;
+	background: url("../../../images/fuli/left-arr.png") left center no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.ht-rili-rightarr{
+	display: inline-block;
+	width:0.33rem;
+	height: 0.25rem;
+	background: url("../../../images/fuli/right-arr.png") right center no-repeat;
+	background-size: contain;
+	vertical-align: middle;
+	cursor: pointer;
+}
+.ht-rili-th{
+	width: 14.25%;
+	float: left;
+	text-align: center;
+	height: 0.53rem;
+	line-height: 0.53rem;
+	/*background: #E66B14;*/
+	color: #000;
+}
+.ht-rili-td{
+	width: 14.25%;
+	float: left;
+	text-align: center;
+	height:1.24rem;
+	background: #EEF5FD;
+	padding-top: 0.07rem;
+	/*border-bottom: 1px solid #ddd;
+	border-right: 1px solid #ddd;*/
+	cursor: pointer;
+}
+.ht-rili-body{
+	overflow: hidden;
+}
+.ht-rili-day{
+	font-family:Arial;
+	font-size: 0.24rem;
+	font-weight: bold;
+	display: inline-block;
+	width: 100%;
+}
+.ht-rili-money{
+	font-family:Arial;
+	display: inline-block;
+	width: 100%;
+	font-size: 0.25rem !important;
+	color: #D4585A
+}
+.ht-rili-td-disabled{
+	color: #BFC4CA;
+}
+.ht-rili-td-active{
+	border-radius: 0.05rem;
+	background: #80B3E8;
+}
+

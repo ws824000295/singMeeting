@@ -1,0 +1,700 @@
+body {
+	background: #f4f4f4;
+}
+
+header {
+	width: 100%;
+	height: 1rem;
+	line-height: 1rem;
+	padding-left: .48rem;
+	text-align: center;
+	background: #fff;
+}
+
+.header_left {
+	width: .28rem;
+	height: .5rem;
+	background: url(../../../images/web/images/address_back.jpg) no-repeat
+		center;
+	background-size: 100%;
+	float: left;
+	margin-right: 2.8rem;
+	margin-top: .2rem;
+}
+
+.header_title {
+	float: left;
+	text-align: center;
+	font-size: .45rem;
+	color: #000;
+}
+
+.address_content {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	font-size: .36rem;
+	background: #fff;
+}
+
+.address_add {
+	padding: .26rem .44rem 0 .33rem;
+}
+
+.address_add .icon-add {
+	display: inline-block;
+	width: .48rem;
+	height: .48rem;
+	background: url(../../../images/web/images/address_add.png) no-repeat
+		center;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-right: .24rem;
+}
+
+.address_inpbox .address_inp_item {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	border-bottom: 1px solid #dddddd;
+	padding: .4rem .33rem;
+	display: flex;
+	position: relative;
+}
+
+.address_inp_item span {
+	display: inline-block;
+	width: 1.75rem;
+}
+
+.address_inp_item input, .address_inp_item textarea {
+	flex: 1;
+	outline: none;
+	border: none;
+	z-index: 1;
+}
+
+.address_addr p {
+	position: absolute;
+	top: .38rem;
+	left: 2rem;
+	padding-right: .33rem;
+	color: #c0c0c0;
+	opacity: 0;	
+}
+
+.goods_shop {
+	margin-top: .26rem;
+	background: #fff;
+	width: 100%;
+	height: auto;
+	padding: .2rem .33rem;
+	overflow: hidden;
+	padding-bottom: 1.7rem;
+}
+
+.goods_shop .shop_logo {
+	width: 1.04rem;
+	height: 1.04rem;
+	border-radius: 50%;
+	object-fit: cover;
+	border: 1px solid #cecdce;
+	margin-right: .28rem;
+}
+
+.shop_name {
+	font-size: .32rem;
+	color: #333;
+}
+
+.goods_info {
+	width: 100%;
+	height: 3.28rem;
+	display: flex;
+	padding: .3rem 0;
+	justify-content: space-around;
+	align-items: space-around;
+	border-top: 1px solid #ddd;
+	border-bottom: 1px solid #ddd;
+	margin: .3rem 0 .5rem;
+	margin-bottom: 0.1rem;
+}
+
+.goods_info_lf img {
+	width: 2.5rem;
+	height: 2.5rem;
+	border: 1px solid #cecdce;
+	margin-right: .32rem;
+}
+
+.goods_info_rg {
+	flex: 1;
+	font-size: .32rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+}
+
+.goods_title {
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 2;
+	overflow: hidden;
+	color: #333;
+}
+
+.goods_size {
+	color: #999;
+}
+
+.goods_price {
+	color: #eb4048;
+}
+
+.goods_count span {
+	float: left;
+	font-size: .35rem;
+}
+
+.buy-number {
+	float: right;
+	display: flex;
+	align-items: center;
+}
+
+.minus {
+	width: .32rem;
+	height: .32rem;
+	background: url('../../../images/web/images/less.png') no-repeat center;
+	background-size: 100%;
+}
+
+.num {
+	display: inline-block;
+	width: 1.6rem;
+	text-align: center;
+	border: none;
+}
+
+.plus {
+	width: .32rem;
+	height: .32rem;
+	background: url(../../../images/web/images/more.png) no-repeat center;
+	background-size: 100%;
+}
+
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1.37rem;
+	text-align: center;
+	line-height: 1.37rem;
+	background: #fff;
+	z-index: 99;
+}
+
+.footer_lf {
+	width: 6.35rem;
+	float: left;
+	font-size: .32rem;
+	color: #000;
+}
+
+.free {
+	color: #eb4048;;
+}
+
+.free span {
+	font-size: .5rem;
+}
+
+.footer_rg {
+	width: 3.65rem;
+	height: 1.37rem;
+	background: #eb4048;
+	float: right;
+}
+
+.footer_rg a {
+	font-size: .43rem;
+	color: #fff;
+}
+
+.buy_alert {
+	width: 90%;
+	height: auto;
+	overflow: hidden;
+	padding: .2rem;
+	background: rgba(0, 0, 0, 0.8);
+	color: #fff;
+	font-size: 0.32rem;
+	position: fixed;
+	left: 50%;
+	top: 30%;
+	margin-left: -45%;
+	text-align: center;
+	z-index: 99999;
+	border-radius: 10px;
+	display: none;
+}
+
+.address_fl {
+	width: 50%;
+	float: left;
+	line-height: 1rem;
+}
+
+.icon.icon-wx {
+	display: inline-block;
+	width: 0.8rem;
+	height: 0.8rem;
+	background: url('../../../images/fuli/wx.png') no-repeat center;
+	background-size: 100%;
+}
+
+.address_wx {
+	background: #08c304;
+	color: #fff;
+	border-radius: 0.2rem;
+	height: 1rem;
+	line-height: 1rem;
+	display: flex;
+	align-items: center;
+	padding-left: .35rem;
+}
+
+/* success_pay  start*/
+.less-alert {
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.less-alert-content {
+	width: 7.86rem;
+	height: 10.6rem;
+	position: absolute;
+	top: 2rem;
+	left: 50%;
+	margin-left: -3.93rem;
+	background: #fff;
+	padding: 0 .4rem;
+}
+
+.less-bg {
+	display: block;
+	width: 5.24rem;
+	height: 3.49rem;
+	margin: 0 auto;
+	margin-top: 1.04rem;
+}
+
+.less-close {
+	width: 1.12rem;
+	height: 1.12rem;
+	background: url('../../../images/fuli/less-close.png') no-repeat center;
+	background-size: 100%;
+	border-radius: 50%;
+	position: absolute;
+	top: -0.33rem;
+	right: -0.27rem;
+}
+
+.dear {
+	font-size: .4rem;
+	color: #e36550;
+	margin-top: .96rem;
+}
+
+.less-tips {
+	font-size: .35rem;
+	color: #000;
+	line-height: .51rem;
+}
+
+.strategy {
+	display: block;
+	width: 3.2rem;
+	height: .8rem;
+	border: 1px solid #e36550;
+	color: #e36550;
+	text-align: center;
+	line-height: .8rem;
+	margin: 0 auto;
+	margin-top: .67rem;
+	border-radius: .18rem;
+}
+
+.know {
+	display: block;
+	width: 100%;
+	height: 1.1rem;
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	font-size: .43rem;
+	text-align: center;
+	line-height: 1.1rem;
+	background: #e36550;
+	color: #fff;
+}
+
+.address-item {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
+	padding: 0.33rem;
+	justify-content: space-around;
+}
+
+.address-item input[type=radio] {
+	-webkit-appearance: none;
+	width: 0.48rem;
+	height: 0.48rem;
+	border-radius: 50%;
+	background: #fff url('../../../images/fuli/check.png') no-repeat center;
+	background-size: 100%;
+	border: none !important;
+	outline: none;
+	margin-right: 0.2rem;
+}
+
+input[type=radio]:checked {
+	width: 0.48rem;
+	height: 0.48rem;
+	border-radius: 50%;
+	background: #fff url('../../../images/fuli/checked.png') no-repeat
+		center;
+	background-size: 100%;
+	border: none;
+}
+
+.address-add {
+	text-align: center;
+	color: #EB4048;
+	font-size: .37rem;
+    padding-bottom: .3rem;
+}
+
+.icon-address-add {
+	display: inline-block;
+	width: 0.48rem;
+	height: 0.48rem;
+	background: #fff url('../../../images/fuli/add-addr.png') no-repeat
+		center;
+	background-size: 100%;
+	vertical-align: middle;
+	margin-right: 0.2rem;
+}
+
+.info-box {
+	flex: 1;
+	padding-right: .2rem;
+}
+
+.info-box .addr {
+	color: #666;
+}
+
+.name-tel {
+	display: block;
+	color: #333;
+}
+
+.name-tel i {
+	font-style: normal;
+	margin-right: 0.48rem;
+}
+
+.addr-op {
+	border-left: 1px solid #999;
+	padding-left: .4rem;
+}
+
+.addr-op .edit-addr {
+	display: block;
+	float: left;
+	width: 0.53rem;
+	height: 0.53rem;
+	background: url('../../../images/fuli/edit-addr.png') no-repeat center;
+	background-size: 100%;
+	margin-right: .4rem;
+}
+
+.addr-op .del-addr {
+	display: block;
+	float: left;
+	width: 0.53rem;
+	height: 0.53rem;
+	background: url('../../../images/fuli/del-addr.png') no-repeat center;
+	background-size: 100%;
+}
+
+.del-addr-alert {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(0, 0, 0, .5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 2000;
+	display: none;
+}
+
+.del-addr-content {
+	width: 9.3rem;
+	height: auto;
+	position: absolute;
+	bottom: -4rem;
+	left: 50%;
+	margin-left: -4.65rem;
+}
+
+.del-addr-top, .del-addr-bottom {
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	background: #fff;
+	border-radius: .3rem;
+	font-size: .44rem;
+}
+
+.del-addr-title {
+	color: #999;
+	text-align: center;
+	border-bottom: 1px solid #dddddd;
+	padding: .3rem 0;
+	font-size: 0.32rem;
+}
+
+.del-addr-del {
+	text-align: center;
+	color: #ff190c;
+	padding: .3rem 0;
+}
+
+.del-addr-bottom {
+	clear: both;
+	margin-top: .4rem;
+	border-radius: .3rem;
+}
+
+.del-addr-cancel {
+	text-align: center;
+	color: #006eff;
+	padding: .3rem 0;
+}
+
+.goods_count{
+    height: auto;
+    overflow: hidden;
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #ededed;
+}
+.fui-switch {
+    -webkit-appearance: none;
+    position: relative;
+    width: .8rem;
+    height: .43rem;
+    outline: 0;
+    border-radius: .22rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background: #DFDFDF;
+    margin-left:0.1rem;
+    margin-right:0.1rem;
+}
+.fui-switch:checked {
+    border-color: #eb4048;
+    background-color: #eb4048;
+}
+.fui-switch:before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+       width: .8rem;
+    height: .43rem;
+    border-radius: .22rem;
+    background-color: #FDFDFD;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s;
+    border: 1px solid #DFDFDF;
+}
+.fui-switch:checked:before {
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+     transform: scale(0); 
+}
+.fui-switch:after {
+    content: " ";
+    position: absolute;
+    top: 1px;
+    left: 0;
+    width:  .43rem;
+				height: .43rem;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+    -moz-transition: transform .3s;
+    -webkit-transition: -webkit-transform .3s;
+    transition: transform .3s;
+}
+.fui-switch:checked:after {
+    -webkit-transform: translateX(.38rem);
+    -ms-transform: translateX(.38rem);
+     transform: translateX(.38rem); 
+}
+.goods_count .ps span{
+	float: inherit;
+}
+.tk_count {
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.6);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    z-index: 100;
+}
+.tk_count .loding{
+	width: 20%;
+	margin: 55% auto;
+	display: block;
+}
+.address-item .address_span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/* success_pay  end*/
+
+
+
+
+/* 添加拉卡拉的样式  start*/
+
+.confirmDate{
+  overflow: hidden;
+  padding: 0 0.4rem 0 0.4rem;
+  font-size: 0.32rem;
+}
+.address_content .confirm_play{
+  float: left;
+  line-height: 2.13rem;
+  margin-right: .3rem;
+}
+.address_content .confirm_date{
+  float: left;
+  height: 2.13rem;
+  width: 60%;
+  text-align: center;
+}
+
+.address_content .confirm_date .dateBox_today{
+  float: left;
+  height: 1.2rem;
+  width: 48%;
+  border: 1px solid #999999;
+  margin-top: 0.47rem;
+  margin-right: 4%;
+  padding-top: 0.12rem;
+}
+.address_content .confirm_date .dateBox_tomorrow{
+  float: left;
+  height: 1.2rem;
+  width:100%;
+  border: 1px solid #999999;
+  margin-top: 0.47rem;
+  padding-top: 0.12rem;
+}
+.address_content .confirm_date .dateCur{
+  border:  1px solid #0093C5;
+  color: #0093C5;
+}
+.address_content .confirmDate .confirm_trigger{
+  float: right;
+  width: 1.2rem;
+  height: 0.53rem;
+  margin-top: 0.8rem;
+  margin-right: 3%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.address_content .confirmDate .confirm_trigger .confirm_dot{
+  width: 0.16rem;
+  height: 0.16rem;
+  background: #999999;
+  display: block;
+  margin-right: 0.1rem;
+}
+/* 未填写过 */
+.confirm_contact{
+  margin-top: 0.27rem;
+  font-size: 0.37rem;
+}
+.confirm_contact .contact_person{
+  height: 1.6rem;
+  border-bottom: 1px solid #999999;
+  background: white;
+}
+.confirm_contact .contact_person span{
+  line-height: 1.6rem;
+  padding-left: .4rem;
+}
+.confirm_contact .contact_phoneNum{
+  height: 1.6rem;
+  background: white;
+}
+.confirm_contact .contact_phoneNum span{
+  line-height: 1.6rem;
+  padding-left: .4rem;
+}
+.confirm_contact .contact_input{
+  height: 1.2rem;
+  width: 1.2rem;
+  outline: none;
+}
+
+/* 日历样式 */
+.demo-box{
+  display: none;
+  position: fixed;
+  bottom: -13.37rem;
+  left: 0;
+}
+
+.ht-rili-date {
+  width: 1.6rem;
+}
+.ht-rili-td{
+  height: 1.87rem;
+}
+.ht-rili-td span{
+  font-size: 0.4rem;
+}
+.shadow{
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.7);
+  z-index:99;
+  display: none;
+}
+
+
+/* 添加拉卡拉的样式  end*/

@@ -1,0 +1,337 @@
+package com.boot.service;
+
+import java.io.File;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import com.boot.common.service.AbstractService;
+import com.boot.common.util.FileAllUtils;
+import com.boot.common.util.TimeUtils;
+import com.boot.common.util.ZipFilesUtil;
+import com.boot.common.util.meet.MediaAPIUtil;
+import com.boot.domain.Device;
+import com.boot.domain.Meeting;
+import com.boot.domain.MeetingConfig;
+import com.boot.domain.MeetingRecord;
+import com.boot.repository.DeviceRepository;
+import com.boot.repository.MeetConfigRepository;
+import com.boot.repository.MeetingRecordRepository;
+import com.boot.repository.MeetingRepository;
+
+/**
+ * @ClassName WelfareService
+ * @Description: 福利企业服务层
+ * @author: WS
+ * @since: 2017-11-22 上午9:15:42
+ */
+@Service
+@Transactional(readOnly = true)
+public class SingleMeetingService extends AbstractService {
+
+	private static Logger LOGGER = LoggerFactory.getLogger(SingleMeetingService.class);
+
+	@Autowired
+	private DeviceRepository deviceRepository;
+
+	@Autowired
+	private MeetingRepository  meetingRepository;
+
+	@Autowired
+	private MeetConfigRepository configRepository;
+	
+	@Autowired
+	private MeetingRecordRepository recordRepository;
+	
+
+	String portTypeName = "com.axis.service.hw.v14.ConfWebServiceInterfacePortType";
+	
+	String serviceLocatorName = "com.axis.service.hw.v14.ConfWebServiceInterface_ServiceLocator";
+
+	/**
+	 * @Title: queryDeviceByState
+	 * @Description: 查找未使用的设备
+	 * @param @param string
+	 * @param @return设定文件
+	 * @author 王朔
+	 * @return List<Device>返回类型
+	 * @throws
+	 */
+	public List<Device> queryDevice() {
+		return deviceRepository.queryDevice();
+	}
+
+	/**
+	 * @throws Exception
+	 * @return
+	 * @Title: createMeeting
+	 * @Description: 创建会议
+	 * @param @param ids设定文件
+	 * @author 王朔
+	 * @return void返回类型
+	 * @throws
+	 */
+	@Transactional
+	public Map<String, Object> createMeeting(List<String> ids) throws Exception {
+		Map<String, Object> map = new HashMap<String, Object>();
+		if (ids == null) {
+			ids = new ArrayList<String>();
+		}
+
+		MeetingConfig config = configRepository.queryConfig(); // 会议配置信息
+		String subject = TimeUtils.getCurrentStandardTime(); // 会议主题
+		long confId = MediaAPIUtil.createConf(subject, config.getCreator(), config.getRecordip(), Integer.valueOf(config.getRecordport()), portTypeName,serviceLocatorName);
+		LOGGER.debug("创建会议返回confId=" + confId + "subject=" + subject);
+
+		map.put("meetCode", confId);
+		if (confId < 0) {
+			map.put("success", false);
+			return map;
+		}
+
+		List<Device> joinsDevice = deviceRepository.queryDeviceByIds(ids); // 入会的客户端
+		if(joinsDevice.size() == 0){
+			map.put("success", false);
+			return map;
+		}
+		//让终端加入会议
+		for (Device d : joinsDevice) {
+			int inviteJoinConf = MediaAPIUtil.inviteJoinConf(confId, d.getAccount(), "", portTypeName, serviceLocatorName);
+			LOGGER.debug("***********{}加入会议,状态:{}", d.getAccount(), inviteJoinConf);
+		}
+
+		LOGGER.debug("线程等待2秒后开始启动录像");
+		try {
+			Thread.sleep(2000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+		int confRecordCtrl = MediaAPIUtil.confRecordCtrl(confId, true, 2, 36, portTypeName, serviceLocatorName);
+		LOGGER.debug("开始录像：状态:{},录像模式 {},分割数 {}", confRecordCtrl, 2, 36);
+
+		//保存会议记录  保存此会议加入的终端账号
+		saveMeeting(String.valueOf(confId),joinsDevice);
+		
+		map.put("success", true);
+		return map;
+	}
+
+
+	/**
+	 * @param joinsDevice  
+	* @Title: saveMeeting 
+	* @Description:保存会议记录
+	* @param @param valueOf设定文件 
+	* @author 王朔
+	* @return void返回类型 
+	* @throws 
+	*/
+	private void saveMeeting(String confId, List<Device> joinsDevice) {
+		//保存会议记录
+		Meeting m = new Meeting();
+		m.setCreateTime(new Date());
+		m.setMeetCode(confId);
+		m.setStatus("0");
+		meetingRepository.save(m);
+		
+		//保存此会议加入的终端账号
+		MeetingRecord r = null;
+		for (Device d : joinsDevice) {
+			r = new MeetingRecord();
+			r.setMeetId(m.getId());
+			r.setMeetCode(confId);
+			r.setAccount(d.getAccount());
+			r.setCreateTime(new Date());
+			recordRepository.save(r);
+		}
+	}
+
+	
+ 
+	
+	
+	/**
+	 * @throws  Exception  
+	* @Title: closeMeetingById 
+	* @Description: 关闭会议
+	* @param @param id
+	* @param @return设定文件 
+	* @author 王朔
+	* @return Map<String,Object>返回类型 
+	* @throws 
+	*/
+	@Transactional
+	public Map<String, Object> closeMeetingById(String id) throws  Exception {
+		Map<String, Object> map = new HashMap<String, Object>();
+		
+		Meeting m  = meetingRepository.findOne(id);
+		long confId = Long.parseLong(m.getMeetCode());
+		
+		//停止录制
+		int confRecordCtrl = MediaAPIUtil.confRecordCtrl(confId, false, 2, 36, portTypeName, serviceLocatorName);
+		LOGGER.debug("********************{},关闭会议录制，关闭结果：{}", confId, confRecordCtrl);
+		
+		//清除PC终端
+		delPcClient(confId);
+		
+		//更改会议表该会议的状态
+		m.setStatus("1");
+		m.setCloseTime(new Date());
+		meetingRepository.save(m);
+		
+		map.put("success", true);
+		return map;
+	}
+
+	/**
+	 * @throws  Exception  
+	* @Title: delPcClient 
+	* @Description:清除PC终端
+	* @param @param confId设定文件 
+	* @author 王朔
+	* @return void返回类型 
+	* @throws 
+	*/
+	private void delPcClient(long confId) throws  Exception {
+		List<MeetingRecord> li = recordRepository.queryRecordByMeetCode(String.valueOf(confId));
+		
+		for (MeetingRecord r : li) {
+			int result = MediaAPIUtil.kickConf(confId, r.getAccount(), portTypeName, serviceLocatorName);
+			LOGGER.debug("confId：{},Account:{},清除业务终端结果：{}", confId, r.getAccount(), result);
+		}
+		
+		LOGGER.debug("***************************等待2秒关闭会议confId="+ confId);
+		Thread.sleep(2000);
+	
+		int closeConf = MediaAPIUtil.closeConf(confId, portTypeName, serviceLocatorName);
+		LOGGER.debug("{} 关闭会议,关闭结果状态 {}", confId, closeConf);
+	}
+	
+
+	/** 
+	* @Title: queryListMeeting 
+	* @Description: 加载所有的会议
+	* @param @return设定文件 
+	* @author 王朔
+	* @return List<Meeting>返回类型 
+	* @throws 
+	*/
+	public List<Meeting> queryListMeeting() {
+		List<Meeting>  li = meetingRepository.queryListMeeting();
+		for (Meeting m : li) {
+			if(m.getCloseTime() == null){
+				String liveTime = getKeepLive(m.getCreateTime(),new Date());
+				m.setLiveTime(liveTime);
+			}else{
+				String liveTime = getKeepLive(m.getCreateTime(),m.getCloseTime());
+				m.setLiveTime(liveTime);
+			}
+			if(m.getStatus().equals("0")){
+				m.setDes("进行中");
+			}else{
+				m.setDes("已结束");
+			}
+		}
+		return li;
+	}
+	
+	private String getKeepLive(Date dataTime, Date date) {
+		long between = date.getTime() - dataTime.getTime();
+		long day = between / (24 * 60 * 60 * 1000);
+		long hour = (between / (60 * 60 * 1000) - day * 24);
+		long min = ((between / (60 * 1000)) - day * 24 * 60 - hour * 60);
+		long s = (between / 1000 - day * 24 * 60 * 60 - hour * 60 * 60 - min * 60);
+		System.out.println("运行时长=" + day + "天" + hour + "小时" + min + "分" + s + "秒");
+		return day + "天" + hour + "小时" + min + "分" + s + "秒";
+	}
+
+	/**
+	 * @param resp 
+	 * @param request 
+	 * @throws Exception  
+	* @Title: downLoadMeetByCode 
+	* @Description: 下载文件
+	* @param @param meetCode设定文件 
+	* @author 王朔
+	* @return void返回类型 
+	* @throws 
+	*/
+	public void downLoadMeetByCode(String meetId, HttpServletRequest request, HttpServletResponse resp) throws Exception {
+		List<File> files = new ArrayList<>();
+		Meeting meet = meetingRepository.findOne(meetId);
+//		String path = "e:/httpdata/Single/"+meetCode+"/";
+		String path = "/httpdata/Single/15"+meet.getMeetCode()+"/";
+		System.out.println("path="+path);
+		FileAllUtils.pathList.clear();
+		FileAllUtils.getFile(new File(path));
+		List<String> lipath = FileAllUtils.pathList;
+		for (String url : lipath) {
+			File file = new File(url);
+			if (file.exists()) {
+                files.add(file);
+            } else {
+                throw new Exception("文件 :不存在,请联系管理员!");
+            } 
+		}
+		
+		if (files.isEmpty()) {
+            throw new Exception("当前选择文件不存在,请联系管理员!");
+        } else {
+            String tempName = meet.getMeetCode()+".zip";
+    //      String pathTmp = "e:/usr/local/temp/" + tempName;
+            String pathTmp = "/usr/local/temp/" + tempName;
+            //压缩
+            ZipFilesUtil.createZipFiles(files, pathTmp, resp);
+            //下载
+            ZipFilesUtil.downloadFile(new File(pathTmp), tempName, request, resp);
+        } 
+	}
+
+	/**
+	 * @throws  Exception 
+	 * @param String  
+	* @Title: againJoinMeeting 
+	* @Description:	客户端重连 判断该终端账号最后一个会议是否还在调度中 如果是拉入
+	* @param @param string设定文件 
+	* @author 王朔
+	* @return void返回类型 
+	* @throws 
+	*/
+	public void againJoinMeeting(String account, String clientIdent) throws  Exception {
+		List<MeetingRecord> listRecord = recordRepository.findRecordByAccount(account);
+		if(listRecord.size() == 0){
+			return;
+		}
+		MeetingRecord record = listRecord.get(0);
+		String meetId = record.getMeetId();
+		Meeting meet = meetingRepository.findOne(meetId);
+		if(meet.getStatus().equals("1")){ //已结束
+			return;
+		}else{
+			long confId = Long.parseLong(meet.getMeetCode());
+			if(clientIdent.equals("7")){
+				/*移出账号*/
+				int result = MediaAPIUtil.kickConf(confId, account, portTypeName, serviceLocatorName);
+				LOGGER.debug("confId：{},Account:{},清除业务终端结果：{}", confId, account, result);
+				try {
+					Thread.sleep(2000);
+				} catch (Exception e) {
+					
+				}
+				int l = MediaAPIUtil.inviteJoinConf(confId, account, "", portTypeName, serviceLocatorName);
+				LOGGER.debug("{}加入会议{},状态:{}", account, confId,l);
+			}
+		}
+	}
+}
